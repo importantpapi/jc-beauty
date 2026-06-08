@@ -4,34 +4,49 @@
    ========================================================================== */
 
 /* Fonts Import */
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&family=WindSong:wght@400;500&family=Great+Vibes&display=swap');
 
 /* CSS Variables */
 :root {
-  --bg-primary: #050505;
-  --bg-secondary: #0c0c0e;
-  --bg-tertiary: #121214;
-  --bg-card: #161619;
+  --bg-primary: #08080a;
+  --bg-secondary: #111114;
+  --bg-tertiary: #18181c;
+  --bg-card: #1d1d22;
   
   --accent-silver: #f5f5f7;
   --accent-silver-dim: #a1a1aa;
   --accent-silver-dark: #3a3a3c;
   
-  /* Luxury Chrome / Metallic Gradients */
+  /* Pink Glamour Theme (Cloning Reference) */
+  --accent-pink: #f2a3ab;
+  --accent-pink-dim: #d69199;
+  --accent-pink-light: #fae3e6;
+  --accent-pink-dark: #b86e76;
+  
+  /* Gradients */
+  --pink-gradient: linear-gradient(135deg, #fae3e6 0%, #f2a3ab 35%, #d18892 75%, #f2a3ab 100%);
+  --pink-border-gradient: linear-gradient(135deg, rgba(242,163,171,0.5) 0%, rgba(242,163,171,0.05) 50%, rgba(242,163,171,0.35) 100%);
+  --pink-glass: rgba(242, 163, 171, 0.12);
+  
+  /* Metallic Chrome Gradients */
   --chrome-gradient: linear-gradient(135deg, #e5e5ea 0%, #ffffff 30%, #a1a1aa 70%, #f5f5f7 100%);
   --chrome-border-gradient: linear-gradient(135deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.05) 50%, rgba(255,255,255,0.2) 100%);
-  --dark-gradient: linear-gradient(180deg, rgba(12,12,14,0) 0%, rgba(5,5,5,1) 90%);
-  --overlay-gradient: linear-gradient(180deg, rgba(5,5,5,0.4) 0%, rgba(5,5,5,0.85) 100%);
+  
+  --dark-gradient: linear-gradient(180deg, rgba(17,17,20,0) 0%, rgba(8,8,10,1) 90%);
+  --overlay-gradient: linear-gradient(180deg, rgba(8,8,10,0.35) 0%, rgba(8,8,10,0.85) 100%);
   
   /* Glows */
-  --glow-soft: 0 0 30px rgba(255, 255, 255, 0.05);
-  --glow-medium: 0 0 40px rgba(255, 255, 255, 0.08);
-  --glow-strong: 0 0 50px rgba(255, 255, 255, 0.12);
-  --glow-silver: 0 0 15px rgba(229, 229, 234, 0.2);
+  --glow-soft: 0 0 30px rgba(242, 163, 171, 0.04);
+  --glow-medium: 0 0 45px rgba(242, 163, 171, 0.08);
+  --glow-strong: 0 0 60px rgba(242, 163, 171, 0.15);
+  --glow-pink: 0 0 20px rgba(242, 163, 171, 0.3);
+  --glow-pink-strong: 0 0 50px rgba(242, 163, 171, 0.4);
 
   /* Fonts */
   --font-serif: 'Cormorant Garamond', serif;
   --font-sans: 'Inter', sans-serif;
+  --font-cursive: 'Great Vibes', cursive;
+  --font-signature: 'WindSong', cursive;
   
   /* Layout */
   --header-height: 80px;
@@ -108,9 +123,9 @@ h2::after {
   display: block;
   width: 50px;
   height: 1px;
-  background: var(--chrome-gradient);
+  background: var(--pink-gradient);
   margin: 1rem auto 0;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 p {
@@ -154,7 +169,7 @@ a {
 }
 
 .btn-primary {
-  background: var(--chrome-gradient);
+  background: var(--pink-gradient);
   color: var(--bg-primary);
   border: none;
   box-shadow: var(--glow-soft);
@@ -182,7 +197,7 @@ a {
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: var(--glow-silver);
+  box-shadow: var(--glow-pink);
 }
 
 .btn-secondary {
@@ -234,7 +249,6 @@ section {
 .glow-leak {
   position: absolute;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0) 70%);
   pointer-events: none;
   z-index: 0;
 }
@@ -244,6 +258,7 @@ section {
   height: 600px;
   top: -10%;
   right: -10%;
+  background: radial-gradient(circle, rgba(244, 209, 198, 0.05) 0%, rgba(244, 209, 198, 0) 70%);
 }
 
 .glow-2 {
@@ -251,6 +266,7 @@ section {
   height: 500px;
   bottom: 20%;
   left: -10%;
+  background: radial-gradient(circle, rgba(244, 209, 198, 0.04) 0%, rgba(244, 209, 198, 0) 70%);
 }
 
 /* Header & Navigation */
@@ -327,7 +343,7 @@ nav a::after {
   left: 0;
   width: 0;
   height: 1px;
-  background: var(--chrome-gradient);
+  background: var(--pink-gradient);
   transition: var(--transition-smooth);
 }
 
@@ -437,13 +453,15 @@ nav a:hover::after, nav a.active::after {
 
 /* 1. Hero Section */
 .hero {
-  min-height: 90vh;
+  min-height: 95vh;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   padding-top: calc(var(--header-height) + 2rem);
   text-align: center;
+  background: radial-gradient(circle at 50% 50%, #fbe6e9 0%, #f5b0ba 60%, #e28a9b 100%);
+  overflow: hidden;
 }
 
 .hero-overlay {
@@ -452,7 +470,7 @@ nav a:hover::after, nav a.active::after {
   left: 0;
   width: 100%;
   height: 100%;
-  background: var(--overlay-gradient);
+  background: radial-gradient(circle at center, rgba(251, 230, 233, 0) 30%, rgba(226, 138, 155, 0.2) 100%);
   z-index: 1;
 }
 
@@ -470,9 +488,10 @@ nav a:hover::after, nav a.active::after {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.45;
-  filter: brightness(0.65) contrast(1.1);
-  transform: scale(1.05);
+  opacity: 0.72;
+  mix-blend-mode: multiply;
+  filter: contrast(1.15) brightness(1.05);
+  transform: scale(1.02);
   animation: zoomBg 20s infinite alternate ease-in-out;
 }
 
@@ -544,111 +563,355 @@ nav a:hover::after, nav a.active::after {
   box-shadow: var(--glow-silver);
 }
 
-/* 2. Luxury Intro Section */
-.intro-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: center;
-}
-
-.intro-text h3 {
-  font-size: 2rem;
-  font-style: italic;
-  margin-bottom: 1.5rem;
-  color: var(--accent-silver);
-}
-
-.intro-text p {
-  margin-bottom: 1.5rem;
-  font-size: 1.05rem;
-}
-
-.intro-signature {
-  font-family: var(--font-serif);
-  font-size: 1.5rem;
-  font-style: italic;
-  margin-top: 2.5rem;
-  color: var(--accent-silver);
+/* Hero Title & Typography Cloned from Reference */
+.hero-title-group {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
 }
 
-.intro-signature::before {
-  content: '';
+.hero-title-main {
+  font-family: var(--font-serif);
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  margin-bottom: 0.3rem;
+  display: block;
+}
+
+.hero-title-sub.text-chrome-cursive {
+  font-family: var(--font-signature); /* WindSong */
+  font-size: clamp(5.5rem, 13vw, 11rem);
+  font-weight: 400;
   display: inline-block;
-  width: 40px;
-  height: 1px;
-  background: rgba(255,255,255,0.3);
+  background: linear-gradient(135deg, #ffffff 0%, #f5f5f7 20%, #a1a1aa 45%, #ffffff 60%, #515154 85%, #a1a1aa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.6)) drop-shadow(0 0 1px rgba(255, 255, 255, 0.9));
+  line-height: 0.9;
+  letter-spacing: normal;
+  padding-bottom: 0.5rem;
 }
 
-.intro-images {
-  position: relative;
-  height: 480px;
-}
-
-.intro-img-wrapper {
-  position: absolute;
-  overflow: hidden;
-  border: 1px solid rgba(255,255,255,0.05);
-  box-shadow: var(--glow-soft);
-}
-
-.intro-img-wrapper img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: grayscale(0.2) contrast(1.05);
+/* Premium Glassmorphic Capsule Booking Button */
+.btn-capsule {
+  border-radius: 100px;
+  padding: 1.2rem 3.5rem;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.2em;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1), inset 0 1px 2px rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.4);
   transition: var(--transition-smooth);
 }
 
-.intro-img-wrapper:hover img {
-  transform: scale(1.05);
-  filter: grayscale(0) contrast(1.05);
+.btn-capsule:hover {
+  transform: translateY(-3px) scale(1.03);
+  background: var(--pink-gradient);
+  color: #2c0e13;
+  box-shadow: var(--glow-pink-strong), 0 10px 20px rgba(242, 163, 171, 0.3);
+  border-color: var(--accent-pink);
 }
 
-.intro-img-1 {
-  width: 70%;
-  height: 80%;
+/* Butterflies Floating Layout & Flapping Keyframes */
+.butterfly-container {
+  position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.butterfly {
+  position: absolute;
+  width: clamp(25px, 4vw, 45px);
+  height: clamp(25px, 4vw, 45px);
+  fill: #ffffff;
+  opacity: 0.65;
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 15px rgba(242, 163, 171, 0.5));
+  pointer-events: none;
+}
+
+.bf-1 {
+  top: 20%;
+  left: 12%;
+  animation: floatButterfly1 16s infinite ease-in-out;
+}
+
+.bf-2 {
+  top: 65%;
+  right: 15%;
+  animation: floatButterfly2 22s infinite ease-in-out;
+}
+
+.bf-3 {
+  top: 45%;
+  left: 78%;
+  animation: floatButterfly3 19s infinite ease-in-out;
+}
+
+@keyframes floatButterfly1 {
+  0%, 100% { transform: translate(0, 0) rotate(15deg) scale(0.9) scaleX(1); }
+  25% { transform: translate(30px, -40px) rotate(25deg) scale(1) scaleX(0.25); }
+  50% { transform: translate(15px, -80px) rotate(10deg) scale(0.85) scaleX(1); }
+  75% { transform: translate(-20px, -50px) rotate(5deg) scale(1.05) scaleX(0.25); }
+}
+
+@keyframes floatButterfly2 {
+  0%, 100% { transform: translate(0, 0) rotate(-10deg) scale(1) scaleX(1); }
+  25% { transform: translate(-30px, -40px) rotate(-18deg) scale(0.85) scaleX(0.3); }
+  50% { transform: translate(15px, -80px) rotate(0deg) scale(1.05) scaleX(1); }
+  75% { transform: translate(30px, -50px) rotate(5deg) scale(0.9) scaleX(0.3); }
+}
+
+@keyframes floatButterfly3 {
+  0%, 100% { transform: translate(0, 0) rotate(5deg) scale(0.85) scaleX(1); }
+  33% { transform: translate(-20px, -35px) rotate(-5deg) scale(1) scaleX(0.25); }
+  66% { transform: translate(15px, -70px) rotate(12deg) scale(0.9) scaleX(1); }
+}
+
+/* 2. Luxury Intro Section (Centered Slate Tagline with Solid Pink Divider Borders) */
+.intro {
+  background: var(--bg-secondary);
+  border-top: 15px solid var(--accent-pink);
+  border-bottom: 15px solid var(--accent-pink);
+  padding: 6rem 1.5rem;
+  text-align: center;
+}
+
+.intro-text-wrapper {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.intro-script-title {
+  font-family: var(--font-signature); /* WindSong Signature Tagline */
+  font-size: clamp(3.2rem, 6.5vw, 5rem);
+  color: var(--accent-pink);
+  text-shadow: 0 0 12px rgba(242, 163, 171, 0.25);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.intro-desc {
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  line-height: 1.8;
+  color: var(--accent-silver-dim);
+  margin-bottom: 2.5rem;
+  font-weight: 300;
+}
+
+.intro-link {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent-pink);
+  border-bottom: 1px solid rgba(242, 163, 171, 0.5);
+  padding-bottom: 5px;
+  transition: var(--transition-smooth);
+}
+
+.intro-link:hover {
+  color: #ffffff;
+  border-color: #ffffff;
+  letter-spacing: 0.26em;
+}
+
+/* Category Banners Section (Dark Slate Layout backdrop) */
+.category-banners-section {
+  background: var(--bg-primary);
+  padding: 6rem 1.5rem;
+  width: 100%;
+  position: relative;
   z-index: 2;
 }
 
-.intro-img-2 {
-  width: 60%;
-  height: 60%;
-  bottom: 0;
-  right: 0;
-  z-index: 1;
+.category-banners-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
 }
 
-.intro-badge {
-  display: inline-block;
-  padding: 0.4rem 1.2rem;
-  font-size: 0.72rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  color: var(--accent-silver);
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 100px;
-  margin-bottom: 0.8rem;
-  font-family: var(--font-sans);
-  box-shadow: var(--glow-soft);
-}
-
-.intro-tagline {
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  color: var(--accent-silver-dim);
-  margin-bottom: 1.5rem;
-  font-family: var(--font-sans);
+.category-banner-card {
   position: relative;
   display: block;
+  height: 420px;
+  overflow: hidden;
+  border-radius: 20px;
+  background: radial-gradient(circle at center, #fce1e6 0%, #f7a2b6 100%);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  box-shadow: 0 10px 30px rgba(242, 163, 171, 0.15);
+  transition: var(--transition-smooth);
+}
+
+/* Soft Spotlight Glowing Halo behind the model */
+.category-banner-card::before {
+  content: '';
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 70%);
+  z-index: 1;
+  pointer-events: none;
+  transition: var(--transition-smooth);
+}
+
+.category-banner-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(250, 227, 230, 0) 50%, rgba(242, 163, 171, 0.4) 100%);
+  z-index: 2;
+  transition: var(--transition-smooth);
+}
+
+.category-banner-img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.88;
+  mix-blend-mode: multiply;
+  transition: var(--transition-smooth);
+  z-index: 2;
+}
+
+.category-banner-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2.5rem 1.5rem;
+  z-index: 3;
+}
+
+.category-banner-title-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.1rem;
+  transition: var(--transition-smooth);
+}
+
+.category-banner-title {
+  font-family: var(--font-sans);
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #2c0e13; /* High contrast dark rose-burgundy */
+  text-shadow: none;
+  transition: var(--transition-smooth);
+}
+
+.category-banner-subtitle {
+  font-family: var(--font-signature); /* WindSong signature script */
+  font-size: 2.4rem;
+  color: #d18892;
+  line-height: 0.8;
+  margin-top: -0.25rem;
+  font-weight: 500;
+  transition: var(--transition-smooth);
+}
+
+/* Hover Animations */
+.category-banner-card:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: var(--glow-pink-strong), 0 20px 40px rgba(242, 163, 171, 0.3);
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+.category-banner-card:hover::before {
+  transform: translate(-50%, -50%) scale(1.15);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+.category-banner-card:hover .category-banner-img {
+  transform: scale(1.05);
+  opacity: 0.95;
+}
+
+.category-banner-card:hover::after {
+  background: linear-gradient(180deg, rgba(250, 227, 230, 0) 30%, rgba(242, 163, 171, 0.5) 100%);
+}
+
+.category-banner-card:hover .category-banner-title {
+  color: #000000;
+}
+
+.category-banner-card:hover .category-banner-subtitle {
+  color: #b86e76;
+  transform: translateY(-2px);
+}
+
+/* Card Butterflies Hover Effects */
+.card-butterflies {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 3;
+  overflow: hidden;
+}
+
+.card-bf {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  fill: #ffffff;
+  opacity: 0;
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.9));
+  transition: opacity 0.5s ease;
+}
+
+.category-banner-card:hover .card-bf {
+  opacity: 0.75;
+}
+
+.bf-c1 {
+  top: 15%;
+  right: 12%;
+  animation: floatCardBf1 8s infinite ease-in-out;
+}
+
+.bf-c2 {
+  bottom: 25%;
+  left: 10%;
+  animation: floatCardBf2 10s infinite ease-in-out;
+}
+
+@keyframes floatCardBf1 {
+  0%, 100% { transform: translate(0, 0) rotate(5deg) scale(0.9) scaleX(1); }
+  50% { transform: translate(-12px, -18px) rotate(-10deg) scale(1.05) scaleX(0.2); }
+}
+
+@keyframes floatCardBf2 {
+  0%, 100% { transform: translate(0, 0) rotate(-15deg) scale(1) scaleX(1); }
+  50% { transform: translate(15px, -12px) rotate(10deg) scale(0.85) scaleX(0.2); }
 }
 
 /* Anti Mascara Club Benefits */
@@ -690,7 +953,7 @@ nav a:hover::after, nav a.active::after {
 .am-benefit-icon {
   font-size: 2rem;
   margin-bottom: 1.5rem;
-  background: var(--chrome-gradient);
+  background: var(--pink-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
@@ -744,7 +1007,7 @@ nav a:hover::after, nav a.active::after {
   left: 50%;
   width: 0;
   height: 1px;
-  background: var(--chrome-gradient);
+  background: var(--pink-gradient);
   transition: var(--transition-smooth);
   transform: translateX(-50%);
 }
@@ -785,7 +1048,7 @@ nav a:hover::after, nav a.active::after {
   left: 0;
   width: 100%;
   height: 1px;
-  background: var(--chrome-gradient);
+  background: var(--pink-gradient);
   transform: scaleX(0);
   transform-origin: left;
   transition: var(--transition-smooth);
@@ -906,22 +1169,24 @@ nav a:hover::after, nav a.active::after {
 }
 
 .style-select-card:hover {
-  border-color: rgba(255,255,255,0.15);
-  transform: translateY(-2px);
+  border-color: rgba(242, 163, 171, 0.4);
+  box-shadow: var(--glow-soft);
+  transform: translateY(-3px);
 }
 
 .style-select-card.active {
-  background: var(--accent-silver);
-  border-color: var(--accent-silver);
+  background: var(--pink-gradient);
+  border-color: var(--accent-pink);
+  box-shadow: var(--glow-pink);
 }
 
 .style-select-card.active h4, .style-select-card.active i {
-  color: var(--bg-primary);
+  color: #2c0e13;
 }
 
 .style-result-wrapper {
   background: var(--bg-secondary);
-  border: 1px solid rgba(255,255,255,0.06);
+  border: 1px solid rgba(242, 163, 171, 0.18);
   padding: 3rem;
   min-height: 300px;
   display: flex;
@@ -951,7 +1216,7 @@ nav a:hover::after, nav a.active::after {
 }
 
 .result-rec {
-  border-left: 2px solid var(--accent-silver);
+  border-left: 2px solid var(--accent-pink);
   padding-left: 1.2rem;
   margin-bottom: 2rem;
 }
@@ -1755,16 +2020,8 @@ footer {
    ========================================================================== */
 
 @media (max-width: 992px) {
-  .intro-grid {
-    grid-template-columns: 1fr;
-    gap: 3rem;
-  }
-  
-  .intro-images {
-    height: 400px;
-    max-width: 500px;
-    margin: 0 auto;
-    width: 100%;
+  .category-banners-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
   
   .trust-grid {
@@ -1846,6 +2103,10 @@ footer {
   }
   
   .services-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .category-banners-grid {
     grid-template-columns: 1fr;
   }
   

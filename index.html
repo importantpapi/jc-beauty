@@ -135,13 +135,22 @@
       </div>
       <div class="hero-overlay"></div>
       
+      <!-- Floating Butterflies in Hero -->
+      <div class="butterfly-container">
+        <div class="butterfly bf-1"><svg viewBox="0 0 24 24"><path d="M12 2C11.5 5 8 8.5 5 10c-1.5.7-3 0-3-1.5S3.5 5 5 5c1 0 2-1 2-2 0-1.5 1-3.5 3-3.5s2.5 1.5 2 2.5zm0 0c.5 3 4 6.5 7 8 1.5.7 3 0 3-1.5S18.5 5 17 5c-1 0-2-1-2-2 0-1.5-1-3.5-3-3.5s-2.5 1.5-2 2.5zM7 11.5c-2 .5-4.5 2-4.5 4.5S4.5 20.5 7 20s3.5-2.5 3.5-5.5-1.5-3.5-3.5-3zM17 11.5c2 .5 4.5 2 4.5 4.5S17.5 20.5 15 20s-3.5-2.5-3.5-5.5 1.5-3.5 3.5-3z"/></svg></div>
+        <div class="butterfly bf-2"><svg viewBox="0 0 24 24"><path d="M12 2C11.5 5 8 8.5 5 10c-1.5.7-3 0-3-1.5S3.5 5 5 5c1 0 2-1 2-2 0-1.5 1-3.5 3-3.5s2.5 1.5 2 2.5zm0 0c.5 3 4 6.5 7 8 1.5.7 3 0 3-1.5S18.5 5 17 5c-1 0-2-1-2-2 0-1.5-1-3.5-3-3.5s-2.5 1.5-2 2.5zM7 11.5c-2 .5-4.5 2-4.5 4.5S4.5 20.5 7 20s3.5-2.5 3.5-5.5-1.5-3.5-3.5-3zM17 11.5c2 .5 4.5 2 4.5 4.5S17.5 20.5 15 20s-3.5-2.5-3.5-5.5 1.5-3.5 3.5-3z"/></svg></div>
+        <div class="butterfly bf-3"><svg viewBox="0 0 24 24"><path d="M12 2C11.5 5 8 8.5 5 10c-1.5.7-3 0-3-1.5S3.5 5 5 5c1 0 2-1 2-2 0-1.5 1-3.5 3-3.5s2.5 1.5 2 2.5zm0 0c.5 3 4 6.5 7 8 1.5.7 3 0 3-1.5S18.5 5 17 5c-1 0-2-1-2-2 0-1.5-1-3.5-3-3.5s-2.5 1.5-2 2.5zM7 11.5c-2 .5-4.5 2-4.5 4.5S4.5 20.5 7 20s3.5-2.5 3.5-5.5-1.5-3.5-3.5-3zM17 11.5c2 .5 4.5 2 4.5 4.5S17.5 20.5 15 20s-3.5-2.5-3.5-5.5 1.5-3.5 3.5-3z"/></svg></div>
+      </div>
+      
       <div class="hero-content">
-        <h1 data-i18n="hero_title">Premium lashes & brows in Mechelen</h1>
+        <div class="hero-title-group">
+          <span class="hero-title-main" data-i18n="hero_title_welcome">WELCOME TO</span>
+          <span class="hero-title-sub text-chrome-cursive">JC Beauty</span>
+        </div>
         <p data-i18n="hero_subtitle">Word wakker met een verzorgde, elegante look — zonder elke dag mascara of wenkbrauwmake-up.</p>
         
         <div class="hero-ctas">
-          <a href="https://beautybyjc.setmore.com/" target="_blank" class="btn btn-primary" data-i18n="hero_cta_book">Boek je afspraak</a>
-          <a href="#services" class="btn btn-secondary nav-link-trigger" data-page="services" data-i18n="hero_cta_services">Bekijk behandelingen</a>
+          <a href="https://beautybyjc.setmore.com/" target="_blank" class="btn btn-primary btn-capsule" data-i18n="hero_cta_book">Boek je afspraak</a>
         </div>
         
         <div class="trust-badges">
@@ -153,29 +162,66 @@
       </div>
     </section>
 
-    <!-- Luxury Intro Section -->
-    <section class="intro">
-      <div class="intro-grid">
-        <div class="intro-text">
-          <span class="intro-badge" data-i18n="intro_badge">Anti Mascara Club</span>
-          <p class="intro-tagline" data-i18n="intro_tagline">Mechelen girls wear JC Beauty</p>
-          <h3 data-i18n="intro_title">Jouw ogen, perfect geaccentueerd.</h3>
-          <p data-i18n="intro_p1">Bij JC Beauty geloven we dat wimpers en wenkbrauwen geen standaardpakket zijn. Elke behandeling wordt volledig op maat ontworpen om jouw natuurlijke schoonheid te versterken.</p>
-          <p data-i18n="intro_p2">Op basis van jouw gezichtsvorm, oogopslag en de gezondheid van je natuurlijke wimpers creëren we een look die naadloos bij jouw levensstijl past. Of je nu kiest voor een subtiele lift of adembenemend volume: wij garanderen perfectie tot in het kleinste detail.</p>
-          <div class="intro-signature" data-i18n="intro_sig">JC Beauty Philosophy</div>
-        </div>
-        <div class="intro-images">
-          <div class="intro-img-wrapper intro-img-1">
-            <img src="assets/afro_lashes.png" alt="Luxury lash mapping and details">
-          </div>
-          <div class="intro-img-wrapper intro-img-2">
-            <img src="assets/brow_lift.png" alt="Brow lift lamination details">
-          </div>
-        </div>
+    <!-- Luxury Intro Banner (Cloned from Reference) -->
+    <section class="intro full-width-section">
+      <div class="intro-text-wrapper">
+        <h3 class="intro-script-title" data-i18n="intro_tagline_cursive">Embrace Your Natural Beauty</h3>
+        <p class="intro-desc" data-i18n="intro_desc">At JC Beauty, we are dedicated to providing the finest quality eyelash and brow treatments to enhance your natural beauty. Our custom designs are created to help you express yourself with confidence and luxury.</p>
+        <a href="#services" class="intro-link nav-link-trigger" data-page="services" data-i18n="intro_discover">DISCOVER MORE</a>
       </div>
+    </section>
 
+    <!-- Category Banners Grid (Cloned from Reference) -->
+    <section class="category-banners-section">
+      <div class="category-banners-grid">
+        
+        <a href="#services" class="category-banner-card nav-link-trigger" data-page="services" data-category="lashes">
+          <div class="category-banner-content">
+            <img src="assets/volume_lashes.png" alt="Lashes Category" class="category-banner-img">
+            <div class="category-banner-title-group">
+              <span class="category-banner-title" data-i18n="cat_lashes">Wimpers</span>
+              <span class="category-banner-subtitle">&amp; Extensions</span>
+            </div>
+          </div>
+          <div class="card-butterflies">
+            <div class="card-bf bf-c1"><svg viewBox="0 0 24 24"><path d="M12 2C11.5 5 8 8.5 5 10c-1.5.7-3 0-3-1.5S3.5 5 5 5c1 0 2-1 2-2 0-1.5 1-3.5 3-3.5s2.5 1.5 2 2.5zm0 0c.5 3 4 6.5 7 8 1.5.7 3 0 3-1.5S18.5 5 17 5c-1 0-2-1-2-2 0-1.5-1-3.5-3-3.5s-2.5 1.5-2 2.5zM7 11.5c-2 .5-4.5 2-4.5 4.5S4.5 20.5 7 20s3.5-2.5 3.5-5.5-1.5-3.5-3.5-3zM17 11.5c2 .5 4.5 2 4.5 4.5S17.5 20.5 15 20s-3.5-2.5-3.5-5.5 1.5-3.5 3.5-3z"/></svg></div>
+            <div class="card-bf bf-c2"><svg viewBox="0 0 24 24"><path d="M12 2C11.5 5 8 8.5 5 10c-1.5.7-3 0-3-1.5S3.5 5 5 5c1 0 2-1 2-2 0-1.5 1-3.5 3-3.5s2.5 1.5 2 2.5zm0 0c.5 3 4 6.5 7 8 1.5.7 3 0 3-1.5S18.5 5 17 5c-1 0-2-1-2-2 0-1.5-1-3.5-3-3.5s-2.5 1.5-2 2.5zM7 11.5c-2 .5-4.5 2-4.5 4.5S4.5 20.5 7 20s3.5-2.5 3.5-5.5-1.5-3.5-3.5-3zM17 11.5c2 .5 4.5 2 4.5 4.5S17.5 20.5 15 20s-3.5-2.5-3.5-5.5 1.5-3.5 3.5-3z"/></svg></div>
+          </div>
+        </a>
+
+        <a href="#services" class="category-banner-card nav-link-trigger" data-page="services" data-category="brows">
+          <div class="category-banner-content">
+            <img src="assets/brow_lift.png" alt="Brows Category" class="category-banner-img">
+            <div class="category-banner-title-group">
+              <span class="category-banner-title" data-i18n="cat_brows">Wenkbrauwen</span>
+              <span class="category-banner-subtitle">&amp; Styling</span>
+            </div>
+          </div>
+          <div class="card-butterflies">
+            <div class="card-bf bf-c1"><svg viewBox="0 0 24 24"><path d="M12 2C11.5 5 8 8.5 5 10c-1.5.7-3 0-3-1.5S3.5 5 5 5c1 0 2-1 2-2 0-1.5 1-3.5 3-3.5s2.5 1.5 2 2.5zm0 0c.5 3 4 6.5 7 8 1.5.7 3 0 3-1.5S18.5 5 17 5c-1 0-2-1-2-2 0-1.5-1-3.5-3-3.5s-2.5 1.5-2 2.5zM7 11.5c-2 .5-4.5 2-4.5 4.5S4.5 20.5 7 20s3.5-2.5 3.5-5.5-1.5-3.5-3.5-3zM17 11.5c2 .5 4.5 2 4.5 4.5S17.5 20.5 15 20s-3.5-2.5-3.5-5.5 1.5-3.5 3.5-3z"/></svg></div>
+          </div>
+        </a>
+
+        <a href="#services" class="category-banner-card nav-link-trigger" data-page="services" data-category="lift">
+          <div class="category-banner-content">
+            <img src="assets/lash_lift.png" alt="Lifts Category" class="category-banner-img">
+            <div class="category-banner-title-group">
+              <span class="category-banner-title" data-i18n="filter_lift">Lash Lift</span>
+              <span class="category-banner-subtitle">&amp; Tinting</span>
+            </div>
+          </div>
+          <div class="card-butterflies">
+            <div class="card-bf bf-c2"><svg viewBox="0 0 24 24"><path d="M12 2C11.5 5 8 8.5 5 10c-1.5.7-3 0-3-1.5S3.5 5 5 5c1 0 2-1 2-2 0-1.5 1-3.5 3-3.5s2.5 1.5 2 2.5zm0 0c.5 3 4 6.5 7 8 1.5.7 3 0 3-1.5S18.5 5 17 5c-1 0-2-1-2-2 0-1.5-1-3.5-3-3.5s-2.5 1.5-2 2.5zM7 11.5c-2 .5-4.5 2-4.5 4.5S4.5 20.5 7 20s3.5-2.5 3.5-5.5-1.5-3.5-3.5-3zM17 11.5c2 .5 4.5 2 4.5 4.5S17.5 20.5 15 20s-3.5-2.5-3.5-5.5 1.5-3.5 3.5-3z"/></svg></div>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- Why Anti Mascara Club Section -->
+    <section class="anti-mascara-club-section">
       <!-- Anti Mascara Club Benefits Grid -->
-      <div class="am-benefits-wrapper">
+      <div class="am-benefits-wrapper" style="margin-top: 0; border-top: none; padding-top: 0;">
         <h4 class="am-benefits-title" data-i18n="am_title">Waarom de Anti Mascara Club?</h4>
         <div class="am-benefits-grid">
           <div class="am-benefit-card glass">
@@ -196,7 +242,7 @@
           <div class="am-benefit-card glass">
             <div class="am-benefit-icon"><i class="fa-solid fa-compass"></i></div>
             <h5 data-i18n="am_benefit4_title">Op Maat Ontworpen</h5>
-            <p data-i18n="am_benefit4_desc">Individuele mapping die jouw oogvorm lift en opent, in tegenstelling tot standaard mascara.</p>
+            <p data-i18n="am_benefit4_desc">Individuele mapping die jouw oogvorm lift en opent, in tegenstelling to standaard mascara.</p>
           </div>
         </div>
       </div>

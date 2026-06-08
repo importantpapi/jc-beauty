@@ -26,7 +26,11 @@ const translations = {
     badge_brow: "Wenkbrauw Specialist",
     badge_location: "Gevestigd in Mechelen",
 
-    // Intro Section
+    // Hero & Intro Section (Design Clone Updates)
+    hero_title_welcome: "WELCOME TO",
+    intro_tagline_cursive: "Embrace Your Natural Beauty",
+    intro_desc: "Bij JC Beauty geloven we dat wimpers en wenkbrauwen geen standaardpakket zijn. Elke behandeling wordt volledig op maat ontworpen om jouw natuurlijke schoonheid te versterken en je zelfvertrouwen een boost te geven.",
+    intro_discover: "ONTDEK MEER",
     intro_badge: "Anti Mascara Club",
     intro_tagline: "Mechelen girls wear JC Beauty",
     intro_title: "Jouw ogen, perfect geaccentueerd.",
@@ -159,7 +163,11 @@ const translations = {
     badge_brow: "Spécialiste Sourcils",
     badge_location: "Situé à Malines",
 
-    // Intro Section
+    // Hero & Intro Section (Design Clone Updates)
+    hero_title_welcome: "WELCOME TO",
+    intro_tagline_cursive: "Sublimez Votre Beauté Naturelle",
+    intro_desc: "Chez JC Beauty, nous pensons que les cils et les sourcils ne sont pas universels. Chaque prestation est conçue sur mesure pour rehausser votre beauté naturelle et booster votre confiance.",
+    intro_discover: "DÉCOUVRIR PLUS",
     intro_badge: "Anti Mascara Club",
     intro_tagline: "Les filles de Malines portent JC Beauty",
     intro_title: "Vos yeux, sublimés à la perfection.",
@@ -292,7 +300,11 @@ const translations = {
     badge_brow: "Brow Specialist",
     badge_location: "Located in Mechelen",
 
-    // Intro Section
+    // Hero & Intro Section (Design Clone Updates)
+    hero_title_welcome: "WELCOME TO",
+    intro_tagline_cursive: "Embrace Your Natural Beauty",
+    intro_desc: "At JC Beauty, we believe lashes and brows are not one-size-fits-all. Every treatment is custom-designed to enhance your natural beauty and boost your confidence.",
+    intro_discover: "DISCOVER MORE",
     intro_badge: "Anti Mascara Club",
     intro_tagline: "Mechelen girls wear JC Beauty",
     intro_title: "Your eyes, perfectly accentuated.",
@@ -1071,6 +1083,20 @@ function initRouter() {
     if (trigger) {
       e.preventDefault();
       const page = trigger.getAttribute("href").replace("#", "");
+      
+      // Handle category banners selection pre-trigger
+      const cat = trigger.getAttribute("data-category");
+      if (cat) {
+        activeServicesCategory = cat;
+        elements.servicesTabBtns.forEach(btn => {
+          if (btn.getAttribute("data-category") === cat) {
+            btn.classList.add("active");
+          } else {
+            btn.classList.remove("active");
+          }
+        });
+      }
+      
       window.location.hash = page;
     }
   });
