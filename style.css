@@ -593,9 +593,10 @@ nav a:hover::after, nav a.active::after {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.6)) drop-shadow(0 0 1px rgba(255, 255, 255, 0.9));
-  line-height: 0.9;
+  line-height: 1.15; /* Adjusted to prevent top loops from overlapping above */
   letter-spacing: normal;
   padding-bottom: 0.5rem;
+  margin-top: 0.8rem; /* Creates breathing room between WELCOME TO and the script title */
 }
 
 /* Premium Glassmorphic Capsule Booking Button */
