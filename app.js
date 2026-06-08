@@ -19,7 +19,7 @@ const translations = {
     
     // Hero Section
     hero_title: "Premium lashes & brows in Mechelen",
-    hero_subtitle: "Word wakker met een verzorgde, elegante look — zonder elke dag mascara of wenkbrauwmake-up.",
+    hero_subtitle: "Word wakker met een verzorgde, elegante look zonder elke dag mascara of wenkbrauwmake-up.",
     hero_cta_book: "Boek je afspraak",
     hero_cta_services: "Bekijk behandelingen",
     badge_lash: "Gecertificeerd Lash Tech",
@@ -156,7 +156,7 @@ const translations = {
 
     // Hero Section
     hero_title: "Cils & sourcils premium à Malines",
-    hero_subtitle: "Réveillez-vous avec un regard élégant et soigné — sans mascara ni maquillage quotidien.",
+    hero_subtitle: "Réveillez-vous avec un regard élégant et soigné sans mascara ni maquillage quotidien.",
     hero_cta_book: "Réserver un rendez-vous",
     hero_cta_services: "Voir les prestations",
     badge_lash: "Lash Tech Certifiée",
@@ -293,7 +293,7 @@ const translations = {
 
     // Hero Section
     hero_title: "Premium lashes & brows in Mechelen",
-    hero_subtitle: "Wake up with an elegant, polished look — without applying mascara or brow makeup daily.",
+    hero_subtitle: "Wake up with an elegant, polished look without applying mascara or brow makeup daily.",
     hero_cta_book: "Book appointment",
     hero_cta_services: "View services",
     badge_dash: "Certified Lash Tech",
