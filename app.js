@@ -13,10 +13,10 @@ const translations = {
     nav_aftercare: "Krulverzorging",
     nav_faq: "FAQ",
     book_now_btn: "Boek Nu",
-    
+
     // SEO Meta
     meta_title: "Curlyila | Hairstylist Specializing in Curly Hair | Genk",
-    
+
     // Hero Section
     hero_title: "Krullenspecialist & Hairstylist in Genk",
     hero_subtitle: "Ervaar op maat gemaakte droge krulsnitten, diepe hydratatie en ultieme veerkracht voor alle krultypes (2A tot 4C).",
@@ -179,9 +179,6 @@ const translations = {
     consult_title: "Twijfel je over je krultype of behandeling?",
     consult_desc: "Stuur een foto van je natuurlijke haar via WhatsApp of Instagram voor gratis persoonlijk advies van Curlyila.",
     consult_wa: "WhatsApp Advies",
-    share_title: "Ken je iemand met krullen?",
-    share_desc: "Deel de salon met vrienden of familie in Genk, Hasselt of Maastricht en help ze aan hun droomkrullen!",
-    share_btn: "Deel via WhatsApp",
 
     // Gallery Filters
     filter_all: "Alles",
@@ -282,11 +279,8 @@ const translations = {
 
     // Consultation Banner
     consult_title: "Un doute sur votre type de boucles ?",
-    consult_desc: "Envoyez une photo de vos cheveux au naturel via WhatsApp ou Instagram pour un conseil personnalisé offert par Curlyila.",
+    consult_desc: "Envoyez une photo de vos cheveux au naturel via WhatsApp ou Instagram pour un conseil personnalisé gratuit de Curlyila.",
     consult_wa: "Conseil WhatsApp",
-    share_title: "Connaissez-vous quelqu'un aux cheveux bouclés ?",
-    share_desc: "Partagez le salon avec vos proches à Genk, Hasselt ou Liège et offrez-leur des boucles de rêve !",
-    share_btn: "Partager sur WhatsApp",
 
     // Studio Essentials
     essentials_title: "Nos Essentiels Boucles en Studio",
@@ -470,11 +464,8 @@ const translations = {
 
     // Consultation Banner
     consult_title: "Unsure about your curl pattern or treatment?",
-    consult_desc: "Send a photo of your natural hair on WhatsApp or Instagram for complimentary 1-on-1 curl advice from Curlyila.",
+    consult_desc: "Send a photo of your natural hair on WhatsApp or Instagram for free personal advice from Curlyila.",
     consult_wa: "WhatsApp Advice",
-    share_title: "Know someone with curls?",
-    share_desc: "Share Curlyila with friends or family in Genk, Hasselt, or Maastricht and help them unlock their dream curls!",
-    share_btn: "Share on WhatsApp",
 
     // Studio Essentials
     essentials_title: "Our Studio Curl Essentials",
@@ -1025,19 +1016,19 @@ const elements = {
   currentLangText: document.getElementById("current-lang"),
   langDropdownMenu: document.getElementById("lang-dropdown-menu"),
   langSelectBtns: document.querySelectorAll(".lang-select-btn"),
-  
+
   navLinks: document.querySelectorAll(".nav-link"),
   navTriggerLinks: document.querySelectorAll(".nav-link-trigger"),
   logoLink: document.getElementById("logo-link"),
   mobileMenuToggle: document.getElementById("mobile-menu-toggle"),
   mainNav: document.getElementById("main-nav"),
-  
+
   quizSelectCards: document.querySelectorAll(".style-select-card"),
   quizResultBox: document.getElementById("quiz-result-box"),
-  
+
   servicesTabBtns: document.querySelectorAll(".tab-btn"),
   servicesCardsContainer: document.getElementById("services-cards-container"),
-  
+
   galleryFilterBtns: document.querySelectorAll(".filter-btn"),
   galleryContainer: document.getElementById("gallery-container"),
   lightbox: document.getElementById("gallery-lightbox"),
@@ -1045,7 +1036,7 @@ const elements = {
   lightboxTitle: document.getElementById("lightbox-title"),
   lightboxDesc: document.getElementById("lightbox-desc"),
   lightboxCloseBtn: document.getElementById("lightbox-close-btn"),
-  
+
   faqContainer: document.getElementById("faq-accordion-container")
 };
 
@@ -1068,7 +1059,7 @@ function setLanguage(lang) {
     elements.currentLangText.textContent = lang.toUpperCase();
   }
   document.documentElement.setAttribute("lang", lang);
-  
+
   // Highlight active lang btn
   elements.langSelectBtns.forEach(btn => {
     if (btn.getAttribute("data-lang") === lang) {
@@ -1131,7 +1122,7 @@ function initRouter() {
   };
 
   window.addEventListener("hashchange", handleHashChange);
-  
+
   // Navigate on clicking main menu links
   elements.navLinks.forEach(link => {
     link.addEventListener("click", (e) => {
@@ -1149,7 +1140,7 @@ function initRouter() {
     if (trigger) {
       e.preventDefault();
       const page = trigger.getAttribute("href").replace("#", "");
-      
+
       // Handle category banners selection pre-trigger
       const cat = trigger.getAttribute("data-category");
       if (cat) {
@@ -1162,7 +1153,7 @@ function initRouter() {
           }
         });
       }
-      
+
       window.location.hash = page;
     }
   });
@@ -1237,7 +1228,7 @@ function updateQuizResult() {
   if (!elements.quizResultBox) return;
   const result = quizData[currentQuizStyle];
   if (!result) return;
-  
+
   const service = servicesData.find(s => s.id === result.recService);
   if (!service) return;
 
@@ -1247,7 +1238,7 @@ function updateQuizResult() {
   const priceText = service.price;
   const durationText = service.duration[currentLanguage] || service.duration.nl;
   const bestForText = service.bestFor[currentLanguage] || service.bestFor.nl;
-  
+
   const durationLabel = translations[currentLanguage]?.quiz_duration || "Duur";
   const priceLabel = translations[currentLanguage]?.quiz_price || "Prijs";
   const bestForLabel = translations[currentLanguage]?.quiz_best_for || "Ideaal voor";
@@ -1297,9 +1288,9 @@ function displayServices() {
   if (!elements.servicesCardsContainer) return;
   const filtered = servicesData.filter(s => s.category === activeServicesCategory);
   const bookText = translations[currentLanguage]?.book_service_btn || "Boek behandeling";
-  
+
   elements.servicesCardsContainer.innerHTML = "";
-  
+
   filtered.forEach(service => {
     const card = document.createElement("div");
     card.className = "service-card";
@@ -1343,12 +1334,12 @@ function initGallery() {
       displayGallery();
     });
   });
-  
+
   if (elements.lightboxCloseBtn && elements.lightbox) {
     elements.lightboxCloseBtn.addEventListener("click", () => {
       elements.lightbox.classList.remove("show");
     });
-    
+
     elements.lightbox.addEventListener("click", (e) => {
       if (e.target === elements.lightbox) {
         elements.lightbox.classList.remove("show");
@@ -1399,7 +1390,7 @@ function renderFAQ() {
   faqData.forEach(item => {
     const el = document.createElement("div");
     el.className = "faq-item";
-    
+
     const questionText = item.q[currentLanguage] || item.q.nl;
     const answerText = item.a[currentLanguage] || item.a.nl;
 
@@ -1418,7 +1409,7 @@ function renderFAQ() {
 
     button.addEventListener("click", () => {
       const isActive = el.classList.contains("active");
-      
+
       // Close all other FAQs
       document.querySelectorAll(".faq-item").forEach(other => {
         other.classList.remove("active");
@@ -1440,7 +1431,7 @@ function renderFAQ() {
 function setupScrollEffects() {
   const header = document.querySelector("header");
   if (!header) return;
-  
+
   window.addEventListener("scroll", () => {
     if (window.scrollY > 50) {
       header.classList.add("scrolled");
