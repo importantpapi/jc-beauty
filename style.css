@@ -1,5 +1,5 @@
 /* ==========================================================================
-   JC BEAUTY - PREMIUM DESIGN SYSTEM & CUSTOM STYLING
+   CURLYILA - PREMIUM DESIGN SYSTEM & CUSTOM STYLING
    Aesthetic: Dark Luxury, Chrome/Silver Accents, Editorial Typography, Soft Glow
    ========================================================================== */
 
@@ -312,6 +312,20 @@ header.scrolled {
   font-size: 1.5rem;
   font-weight: 500;
   letter-spacing: 0.1em;
+}
+
+.logo-icon-svg {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 0 8px rgba(242, 163, 171, 0.3));
+}
+
+.logo-svg {
+  width: 100%;
+  height: 100%;
 }
 
 .logo-img {
@@ -739,10 +753,10 @@ nav a:hover::after, nav a.active::after {
   letter-spacing: 0.26em;
 }
 
-/* Category Banners Section (Dark Slate Layout backdrop) */
+/* Category Banners Section */
 .category-banners-section {
   background: var(--bg-primary);
-  padding: 6rem 1.5rem;
+  padding: 5rem 1.5rem;
   width: 100%;
   position: relative;
   z-index: 2;
@@ -751,153 +765,138 @@ nav a:hover::after, nav a.active::after {
 .category-banners-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2.5rem;
+  gap: 2rem;
   max-width: var(--max-width);
   margin: 0 auto;
 }
 
 .category-banner-card {
   position: relative;
-  display: block;
-  height: 420px;
+  display: flex;
+  flex-direction: column;
+  background: #111116;
+  border-radius: 18px;
   overflow: hidden;
-  border-radius: 20px;
-  background: radial-gradient(circle at center, #fce1e6 0%, #f7a2b6 100%);
-  border: 1px solid rgba(255, 255, 255, 0.45);
-  box-shadow: 0 10px 30px rgba(242, 163, 171, 0.15);
-  transition: var(--transition-smooth);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease, border-color 0.4s ease;
+  text-decoration: none;
 }
 
-/* Soft Spotlight Glowing Halo behind the model */
-.category-banner-card::before {
-  content: '';
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 70%);
-  z-index: 1;
-  pointer-events: none;
-  transition: var(--transition-smooth);
-}
-
-.category-banner-card::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(250, 227, 230, 0) 50%, rgba(242, 163, 171, 0.4) 100%);
-  z-index: 2;
-  transition: var(--transition-smooth);
+.category-banner-media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  background: #08080a;
 }
 
 .category-banner-img {
-  position: absolute;
-  bottom: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.88;
-  mix-blend-mode: multiply;
-  transition: var(--transition-smooth);
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.category-badge-pill {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: rgba(8, 8, 10, 0.85);
+  border: 1px solid var(--accent-pink);
+  padding: 0.35rem 0.85rem;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-pink-light);
+  backdrop-filter: blur(10px);
   z-index: 2;
 }
 
-.category-banner-content {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 2.5rem 1.5rem;
-  z-index: 3;
-}
-
-.category-banner-title-group {
+.category-banner-body {
+  padding: 1.8rem 1.5rem;
+  background: #121217;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 0.1rem;
-  transition: var(--transition-smooth);
+  flex-grow: 1;
 }
 
 .category-banner-title {
   font-family: var(--font-sans);
   font-size: 1.35rem;
   font-weight: 700;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: #2c0e13; /* High contrast dark rose-burgundy */
-  text-shadow: none;
-  transition: var(--transition-smooth);
+  color: #ffffff;
+  margin-bottom: 0.2rem;
+  transition: color 0.3s ease;
 }
 
 .category-banner-subtitle {
-  font-family: var(--font-signature); /* WindSong signature script */
-  font-size: 2.4rem;
-  color: #d18892;
-  line-height: 0.8;
-  margin-top: -0.25rem;
-  font-weight: 500;
-  transition: var(--transition-smooth);
+  font-family: var(--font-signature);
+  font-size: 2.3rem;
+  color: var(--accent-pink);
+  line-height: 1;
+  margin-bottom: 1.2rem;
+  display: block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.category-banner-cta {
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent-silver);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  width: 100%;
+  justify-content: center;
+  transition: color 0.3s ease, gap 0.3s ease;
+}
+
+.category-banner-cta i {
+  color: var(--accent-pink);
+  transition: transform 0.3s ease;
 }
 
 /* Hover Animations */
 .category-banner-card:hover {
-  transform: translateY(-8px) scale(1.01);
-  box-shadow: var(--glow-pink-strong), 0 20px 40px rgba(242, 163, 171, 0.3);
-  border-color: rgba(255, 255, 255, 0.7);
-}
-
-.category-banner-card:hover::before {
-  transform: translate(-50%, -50%) scale(1.15);
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0) 70%);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7), 0 0 25px rgba(242, 163, 171, 0.25);
+  border-color: rgba(242, 163, 171, 0.5);
 }
 
 .category-banner-card:hover .category-banner-img {
-  transform: scale(1.05);
-  opacity: 0.95;
-}
-
-.category-banner-card:hover::after {
-  background: linear-gradient(180deg, rgba(250, 227, 230, 0) 30%, rgba(242, 163, 171, 0.5) 100%);
+  transform: scale(1.08);
 }
 
 .category-banner-card:hover .category-banner-title {
-  color: #000000;
+  color: #ffffff;
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.5);
 }
 
 .category-banner-card:hover .category-banner-subtitle {
-  color: #b86e76;
-  transform: translateY(-2px);
+  color: var(--accent-pink-light);
+  transform: scale(1.05);
 }
 
-/* Card Butterflies Hover Effects */
-.card-butterflies {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  z-index: 3;
-  overflow: hidden;
+.category-banner-card:hover .category-banner-cta {
+  color: var(--accent-pink);
+  gap: 0.8rem;
 }
 
-.card-bf {
-  position: absolute;
-  width: 28px;
-  height: 28px;
-  fill: #ffffff;
-  opacity: 0;
-  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.9));
-  transition: opacity 0.5s ease;
-}
-
-.category-banner-card:hover .card-bf {
-  opacity: 0.75;
+.category-banner-card:hover .category-banner-cta i {
+  transform: translateX(4px);
 }
 
 .bf-c1 {
@@ -2194,5 +2193,383 @@ footer {
 @media (max-width: 480px) {
   .style-finder-cards {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ==========================================================================
+   BEBONIA-INSPIRED HIGH CONVERTING COMPONENTS
+   ========================================================================== */
+
+/* 1. Editorial Press Bar */
+.press-bar {
+  padding: 2.2rem 1.5rem;
+  background: rgba(10, 10, 12, 0.85);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  text-align: center;
+}
+
+.press-bar-title {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: var(--accent-pink);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.press-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3.5rem;
+  opacity: 0.7;
+}
+
+.press-logo-item {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  color: var(--accent-silver);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  text-transform: uppercase;
+}
+
+.press-logo-item:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+  color: var(--accent-pink-light);
+}
+
+/* 2. Before & After Transformation Feature */
+.transformation-section {
+  padding: 6rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.transformation-wrapper {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 3.5rem;
+  align-items: center;
+  background: var(--bg-secondary);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--glow-medium);
+}
+
+.transformation-media {
+  position: relative;
+  height: 100%;
+  min-height: 420px;
+}
+
+.transformation-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.transformation-badge {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  background: rgba(8, 8, 10, 0.85);
+  border: 1px solid var(--accent-pink);
+  padding: 0.5rem 1.2rem;
+  border-radius: 30px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent-pink-light);
+  backdrop-filter: blur(10px);
+}
+
+.transformation-details {
+  padding: 3rem 3rem 3rem 0;
+}
+
+.transformation-tag {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--accent-pink);
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+.transformation-title {
+  font-family: var(--font-serif);
+  font-size: 2.3rem;
+  font-style: italic;
+  margin-bottom: 1.2rem;
+  line-height: 1.2;
+}
+
+.transformation-desc {
+  color: var(--accent-silver-dim);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.transformation-specs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+  margin-bottom: 2.2rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+}
+
+.spec-item span {
+  display: block;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--accent-silver-dim);
+  margin-bottom: 0.2rem;
+}
+
+.spec-item strong {
+  font-size: 0.95rem;
+  color: var(--accent-silver);
+}
+
+/* 3. Founder Story (Meet Curlyila) */
+.founder-section {
+  padding: 6rem 2rem;
+  background: var(--bg-tertiary);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.founder-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.founder-img-wrapper {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(242, 163, 171, 0.3);
+  box-shadow: var(--glow-soft);
+}
+
+.founder-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+}
+
+.founder-origin-badge {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  background: rgba(8, 8, 10, 0.9);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  color: var(--accent-silver);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.founder-content h3 {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.founder-subtitle {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--accent-pink);
+  margin-bottom: 1.8rem;
+  display: block;
+}
+
+.founder-content p {
+  color: var(--accent-silver-dim);
+  line-height: 1.8;
+  font-size: 0.96rem;
+  margin-bottom: 1.4rem;
+}
+
+.founder-sig {
+  font-family: 'WindSong', 'Great Vibes', cursive;
+  font-size: 2.2rem;
+  color: var(--accent-pink);
+  margin-top: 1.5rem;
+}
+
+/* 4. Comparison Table (Dry Cut vs Wet Cut) */
+.comparison-section {
+  padding: 6rem 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.comparison-card {
+  padding: 2.5rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.comparison-card.bad {
+  background: rgba(255, 255, 255, 0.02);
+  opacity: 0.75;
+}
+
+.comparison-card.good {
+  background: var(--bg-card);
+  border: 1px solid rgba(242, 163, 171, 0.35);
+  box-shadow: var(--glow-medium);
+  position: relative;
+}
+
+.comparison-badge {
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  background: var(--accent-pink);
+  color: #08080a;
+  padding: 0.3rem 0.9rem;
+  border-radius: 20px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.comparison-header {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.comparison-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.comparison-list li {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  font-size: 0.92rem;
+  color: var(--accent-silver-dim);
+  line-height: 1.5;
+}
+
+.comparison-list li i {
+  margin-top: 0.2rem;
+  flex-shrink: 0;
+}
+
+.comparison-card.good .comparison-list li {
+  color: var(--accent-silver);
+}
+
+.comparison-card.good .comparison-list li i {
+  color: var(--accent-pink);
+}
+
+/* 5. Selfie Consultation Banner */
+.consultation-cta-banner {
+  margin: 4rem auto;
+  max-width: 1100px;
+  padding: 3rem;
+  background: linear-gradient(135deg, rgba(29, 29, 34, 0.9) 0%, rgba(17, 17, 20, 0.95) 100%);
+  border: 1px solid rgba(242, 163, 171, 0.25);
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  box-shadow: var(--glow-soft);
+}
+
+.consultation-text h4 {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.consultation-text p {
+  color: var(--accent-silver-dim);
+  font-size: 0.95rem;
+}
+
+.consultation-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Responsive adjustments for Bebonia components */
+@media (max-width: 992px) {
+  .transformation-wrapper {
+    grid-template-columns: 1fr;
+  }
+  
+  .transformation-details {
+    padding: 2.5rem;
+  }
+  
+  .founder-container {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  
+  .founder-img-wrapper {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+  
+  .comparison-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .consultation-cta-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .consultation-actions {
+    justify-content: center;
+    width: 100%;
   }
 }

@@ -1,6 +1,6 @@
 /* ==========================================================================
-   JC BEAUTY - PREMIUM SCRIPTS & INTERACTION ENGINE
-   Features: Multilingual Engine, Section Router, Lash Quiz, Dynamic Grid, Accordion
+   CURLYILA - HAIRSTYLIST SPECIALIZING IN CURLY HAIR
+   Interaction Engine & Multilingual System
    ========================================================================== */
 
 // 1. Translation Dictionary
@@ -10,134 +10,164 @@ const translations = {
     nav_home: "Home",
     nav_services: "Behandelingen",
     nav_gallery: "Resultaten",
-    nav_aftercare: "Nazorg",
+    nav_aftercare: "Krulverzorging",
     nav_faq: "FAQ",
     book_now_btn: "Boek Nu",
     
     // SEO Meta
-    meta_title: "JC Beauty | Premium lashes & brows in Mechelen",
+    meta_title: "Curlyila | Hairstylist Specializing in Curly Hair | Mechelen",
     
     // Hero Section
-    hero_title: "Premium lashes & brows in Mechelen",
-    hero_subtitle: "Word wakker met een verzorgde, elegante look zonder elke dag mascara of wenkbrauwmake-up.",
-    hero_cta_book: "Boek je afspraak",
+    hero_title: "Krullenspecialist & Hairstylist in Mechelen",
+    hero_subtitle: "Ervaar op maat gemaakte droge krulsnitten, diepe hydratatie en ultieme veerkracht voor alle krultypes (2A tot 4C).",
+    hero_cta_book: "Boek je krulsessie",
     hero_cta_services: "Bekijk behandelingen",
-    badge_lash: "Gecertificeerd Lash Tech",
-    badge_brow: "Wenkbrauw Specialist",
+    badge_curl: "Krullenspecialist & Hairstylist",
+    badge_technique: "Droog Knippen per Krul",
     badge_location: "Gevestigd in Mechelen",
 
-    // Hero & Intro Section (Design Clone Updates)
+    // Hero & Intro Section
     hero_title_welcome: "WELCOME TO",
-    intro_tagline_cursive: "Embrace Your Natural Beauty",
-    intro_desc: "Bij JC Beauty geloven we dat wimpers en wenkbrauwen geen standaardpakket zijn. Elke behandeling wordt volledig op maat ontworpen om jouw natuurlijke schoonheid te versterken en je zelfvertrouwen een boost te geven.",
-    intro_discover: "ONTDEK MEER",
-    intro_badge: "Anti Mascara Club",
-    intro_tagline: "Mechelen girls wear JC Beauty",
-    intro_title: "Jouw ogen, perfect geaccentueerd.",
-    intro_p1: "Bij JC Beauty geloven we dat wimpers en wenkbrauwen geen standaardpakket zijn. Elke behandeling wordt volledig op maat ontworpen om jouw natuurlijke schoonheid te versterken.",
-    intro_p2: "Op basis van jouw gezichtsvorm, oogopslag en de gezondheid van je natuurlijke wimpers creëren we een look die naadloos bij jouw levensstijl past. Of je nu kiest voor een subtiele lift of adembenemend volume: wij garanderen perfectie tot in het kleinste detail.",
-    intro_sig: "JC Beauty Filosofie",
-
-    // Anti Mascara Club Benefits
-    am_title: "Waarom de Anti Mascara Club?",
-    am_benefit1_title: "Bespaar Tijd",
-    am_benefit1_desc: "Bespaar elke ochtend 15 minuten en word moeiteloos wakker met een perfecte wimperlijn.",
-    am_benefit2_title: "Geen Vlekken",
-    am_benefit2_desc: "Zweet-, regen- en traanbestendig. Perfect voor een actieve levensstijl zonder mascara-uitloop.",
-    am_benefit3_title: "Gezonde Wimpers",
-    am_benefit3_desc: "Geen schadelijke wimpertangen of agressieve reinigers die je natuurlijke wimpers breken.",
-    am_benefit4_title: "Op Maat Ontworpen",
-    am_benefit4_desc: "Individuele mapping die jouw oogvorm lift en opent, in tegenstelling tot standaard mascara.",
+    intro_tagline_cursive: "Embrace Your Natural Curls",
+    intro_desc: "Bij Curlyila geloven we dat geen twee krullen hetzelfde zijn. Met onze gespecialiseerde droogkniptechnieken, diepe stoombehandelingen en gepersonaliseerd routine-advies laten we jouw natuurlijke textuur stralen zoals nooit tevoren.",
+    intro_discover: "ONTDEK BEHANDELINGEN",
+    am_title: "Waarom Kiezen Voor Krullenspecialist Curlyila?",
+    am_benefit1_title: "Droog Knippen per Krul",
+    am_benefit1_desc: "Geen natte knipbeurten die je krulpatroon vervormen. We knippen droog, zodat elke krul op de perfecte natuurlijke plek valt.",
+    am_benefit2_title: "Diepe Hydratatie & Stoom",
+    am_benefit2_desc: "Voedende, sulfaat- en siliconenvrije formules die droge krullen intens hydrateren en pluis definitief elimineren.",
+    am_benefit3_title: "Krul Coaching & Advies",
+    am_benefit3_desc: "Je leert precies welke technieken, producten en routine jouw krullen thuis moeiteloos gedefinieerd en veerkrachtig houden.",
+    am_benefit4_title: "Alle Krultypes (2A tot 4C)",
+    am_benefit4_desc: "Van zachte waves tot dichte afro coils: elke textuur krijgt een gespecialiseerde, op maat gemaakte aanpak.",
 
     // Studio Essentials
-    essentials_title: "Onze Studio Nazorg Essentials",
-    essentials_subtitle: "Behoud je perfecte resultaat langer met deze door ons geselecteerde premium nazorgproducten, verkrijgbaar in de salon.",
-    product1_name: "Luxe Wimpershampoo",
-    product1_desc: "Zachte, olievrije formule die wimperextensions diep reinigt, beschermt en bacteriegroei voorkomt.",
-    product2_name: "Premium Wimperborstel Set",
-    product2_desc: "Set van drie zachte spoolie-borsteltjes in een beschermende koker voor dagelijkse styling.",
-    product3_name: "Hydraterend Lash Serum",
-    product3_desc: "Voedt en versterkt natuurlijke wimpers en wenkbrauwen na een lift- of laminatiebehandeling.",
+    essentials_title: "Onze Studio Krul Essentials",
+    essentials_subtitle: "Houd je krullen salon-vers en pluisvrij met deze door Curlyila geselecteerde premium krulverzorgingsproducten.",
+    product1_name: "Luxe Curl Defining Custard",
+    product1_desc: "Lichte gel-custard die krullen definieert, langdurige veerkracht geeft en beschermt tegen hoge luchtvochtigheid.",
+    product2_name: "Hydraterende Leave-In Milk",
+    product2_desc: "Diep voedende melk die dorstige krullen ontwart, voedt en voorbereidt op styling zonder te verzwaren.",
+    product3_name: "100% Zijden Bonnet & Scalp Brush",
+    product3_desc: "Beschermt krullen tegen nachtelijke wrijving en stimuleert de hoofdhuid voor gezondere krulgroei.",
 
     // Quiz Section
-    quiz_title: "Vind Jouw Wimpersignatuur",
-    quiz_style_natural: "Natural & Clean",
-    quiz_style_glam: "Soft Glam",
-    quiz_style_volume: "Full Volume",
-    quiz_style_mega: "Mega Glam",
-    quiz_style_lift: "Lash Lift Only",
-    quiz_rec_title: "Aanbevolen voor jou:",
+    quiz_title: "Vind Jouw Krultype & Behandeling",
+    quiz_style_wavy: "Wavy (2A-2C)",
+    quiz_style_curly: "Classic Curly (3A-3B)",
+    quiz_style_coily: "Tight Curls (3C-4A)",
+    quiz_style_kinky: "Afro Coils (4B-4C)",
+    quiz_style_repair: "Herstel & Transitie",
+    quiz_rec_title: "Aanbevolen behandeling voor jou:",
     quiz_duration: "Duur",
     quiz_price: "Prijs",
     quiz_best_for: "Ideaal voor",
-    quiz_book_rec: "Boek deze stijl",
+    quiz_book_rec: "Boek deze behandeling",
 
     // Services categories
-    cat_lashes: "Wimpers",
-    cat_brows: "Wenkbrauwen",
-    cat_packs: "Voordeelpacks",
+    cat_cuts: "Krulsnitten",
+    cat_treatments: "Verzorging & Detox",
+    cat_styling: "Pakketten & Makeovers",
 
     // Trust Section
-    trust_title: "Zorgeloze Schoonheid",
-    trust_p1_title: "Gezonde Wimpers Eerst",
-    trust_p1_desc: "Wij hechten het grootste belang aan de gezondheid van je eigen wimpers. De wimperextensions worden zorgvuldig geplaatst zonder de natuurlijke groeicyclus te beschadigen.",
-    trust_p2_title: "Gezichts- & Oogmapping",
-    trust_p2_desc: "Geen enkele set is hetzelfde. We analyseren je gezichtsstructuur en oogvorm om een wimperontwerp te creëren dat jouw blik optimaal lift en opent.",
+    trust_title: "Jouw Krullen in Deskundige Handen",
+    trust_p1_title: "Gespecialiseerde Krultechnieken",
+    trust_p1_desc: "Curlyila is getraind in geavanceerde droogknipmethodes voor krullend haar. We knippen met respect voor de natuurlijke veerkracht en het krimpingspercentage.",
+    trust_p2_title: "100% Krulvriendelijke Formules",
+    trust_p2_desc: "Geen agressieve sulfaten, minerale oliën of zware siliconen. Wij werken uitsluitend met hoogwaardige, hydraterende en voedende ingrediënten.",
     trust_p3_title: "Gecertificeerde Kwaliteit",
-    trust_p3_desc: "Onze specialiste is volledig opgeleid en gecertificeerd. We werken uitsluitend met hypoallergene, hoogwaardige lijmen en materialen.",
+    trust_p3_desc: "Persoonlijke aandacht, rust en pure luxe in het hart van Mechelen. Elke behandeling is een ontspannende ervaring met direct zichtbaar resultaat.",
 
     // Reviews Section
     reviews_title: "Wat Klanten Zeggen",
     reviews_placeholder: "Recensies van klanten komen binnenkort online.",
-    review_cta_text: "Ben je al bij ons behandeld?",
+    review_cta_text: "Ben je al bij Curlyila geknipt of behandeld?",
     review_cta_btn: "Laat een review achter",
 
     // Final CTA
-    final_cta_title: "Klaar Voor Je Volgende Wimper-Era?",
-    final_cta_subtitle: "Boek je JC Beauty afspraak en ga naar huis met een look die moeiteloos, verzorgd en helemaal van jou is.",
+    final_cta_title: "Klaar Voor Jouw Ultieme Krultransformatie?",
+    final_cta_subtitle: "Boek je afspraak bij Curlyila en ontdek hoe mooi, gedefinieerd en veerkrachtig jouw natuurlijke krullen echt kunnen zijn.",
     final_cta_btn: "Boek Afspraak",
 
     // Aftercare Items
-    care_1_title: "Drooghouden",
-    care_1_desc: "Houd de wimpers de eerste 24-48 uur na de behandeling volledig droog. Vermijd stoom, sauna's en zware trainingen om de lijm optimaal te laten hechten.",
-    care_2_title: "Dagelijks Borstelen",
-    care_2_desc: "Borstel je wimperextensions dagelijks zachtjes door met een schoon wimperborsteltje om ze mooi gespreid en in model te houden.",
-    care_3_title: "Vermijd Olieproducten",
-    care_3_desc: "Gebruik geen reinigingsproducten, crèmes of make-up op oliebasis rondom de ogen. Olie lost de wimperlijm op, waardoor extensions sneller uitvallen.",
-    care_4_title: "Niet Wrijven of Trekken",
-    care_4_desc: "Trek of wrijf nooit aan de extensions. Dit kan de natuurlijke wimpers beschadigen. Laat de extensions altijd professioneel verwijderen.",
-    care_5_title: "Boek Tijdig Refills",
-    care_5_desc: "Wimpers vallen natuurlijk uit. Boek elke 2 tot 3 weken een refill-afspraak om je wimperlijn vol, elegant en verzorgd te houden.",
-    care_6_title: "Reinig Regelmatig",
-    care_6_desc: "Reinig je wimpers 2-3 keer per week met een speciale wimpershampoo om opbouw van bacteriën, make-upresten en talg te voorkomen.",
+    care_1_title: "Hydratatie is Koning",
+    care_1_desc: "Breng je leave-in conditioner en stylingproducten altijd aan op kletsnat haar. Vocht is de sleutel tot pluisvrije, elastische kruldefinitie.",
+    care_2_title: "Satijnen Bescherming 's Nachts",
+    care_2_desc: "Slaap op een 100% moerbeizijden kussensloop of draag een satijnen bonnet. Dit voorkomt schuring, knopen en vochtverlies tijdens het slapen.",
+    care_3_title: "Microvezel Droogdeppen",
+    care_3_desc: "Gebruik nooit een ruwe badstof handdoek. Dep zachtjes droog met een microvezel handdoek of katoenen t-shirt om je krulpatroon te bewaren.",
+    care_4_title: "Vermijd Schadelijke Sulfaten",
+    care_4_desc: "Kies altijd voor milde, sulfaatvrije cleansers en vermijd zware niet-wateroplosbare siliconen die build-up veroorzaken op je krullen.",
+    care_5_title: "Diffuseren op Lage Hitte",
+    care_5_desc: "Gebruik een bowl-diffuser op lage snelheid en gematigde warmte. Raak de krullen pas aan wanneer ze 100% droog zijn voor maximale definitie.",
+    care_6_title: "Regelmatige Onderhoudsknip",
+    care_6_desc: "Boek elke 3 tot 4 maanden een droge krul-refresh om gespleten punten te verwijderen en je model veerkrachtig en luchtig te houden.",
 
     // How it works
     booking_title: "Hoe Het Werkt",
-    step1_title: "Kies je behandeling",
-    step1_desc: "Selecteer je favoriete lash of brow service via onze behandelingenpagina of direct op Setmore.",
+    step1_title: "Kies je krulbehandeling",
+    step1_desc: "Selecteer je favoriete krulsnit, treatment of makeover via ons overzicht of direct op de boekingspagina.",
     step2_title: "Betaal voorschot",
-    step2_desc: "Voldoe een niet-restitueerbaar voorschot van €15 om je tijdslot definitief in de agenda te reserveren.",
+    step2_desc: "Voldoe een niet-restitueerbaar voorschot van €15 om je tijdslot definitief in de salonagenda te reserveren.",
     step3_title: "Ontvang bevestiging",
-    step3_desc: "Je ontvangt direct een e-mail en sms met de afspraakdetails en de precieze salonlocatie.",
-    step4_title: "Geniet van het resultaat",
-    step4_desc: "Kom op tijd, ontspan in onze luxe stoel en word wakker met een adembenemende, elegante blik.",
-    cta_box_title: "Boek Je Exclusieve Ervaring",
-    cta_box_desc: "Plan vandaag nog je afspraak. Heb je vragen over de behandelingen of wil je graag stijladvies? Neem gerust contact op.",
+    step3_desc: "Je ontvangt direct een e-mail en sms met de afspraakdetails, route en voorbereidingsinstructies voor je haar.",
+    step4_title: "Geniet van je krullen",
+    step4_desc: "Kom met droog, ontward haar in zijn natuurlijke krulpatroon en verlaat de salon met volumineuze, glanzende krullen.",
+    cta_box_title: "Boek Jouw Krulervaring bij Curlyila",
+    cta_box_desc: "Plan vandaag nog je afspraak. Heb je vragen over je krultype of wil je advies over de juiste behandeling? Neem gerust contact op.",
     cta_box_btn: "Naar de Boekingspagina",
 
     // Footer
-    footer_brand_desc: "JC Beauty is een premium lash & brow studio gevestigd in Mechelen, België. Wij streven naar perfectie en leveren op maat gemaakte ontwerpen die je natuurlijke schoonheid versterken en beschermen.",
+    footer_brand_desc: "Curlyila is een exclusieve krullenspecialist en hairstudio gevestigd in Mechelen, België. Wij zijn gespecialiseerd in droog knippen per krul, intensieve hydratatietherapieën en krultransformaties voor alle texturen (2A tot 4C).",
     footer_links_title: "Navigatie",
     footer_contact_title: "Contact & Locatie",
     footer_map_hint: "(Precieze locatie in bevestigingsmail)",
-    footer_creator: "Ontworpen voor pure luxe",
+    footer_creator: "Ontworpen voor pure luxe krullen",
+
+    // Press Bar & Transformations
+    press_bar_title: "As Featured In & Loved By Media",
+    trans_badge: "Real Salon Results",
+    trans_tag: "Transformatie Uitgelicht",
+    trans_title: "Van Pluis & Onrust naar Italiaanse Perfectie",
+    trans_desc: "Met onze Signature Curly Cut en diepe stoomhydratatie transformeren we droge, ongedefinieerde krullen in veerkrachtige, glanzende ringlets zonder hittebeschadiging.",
+    spec_client: "Klant Textuur",
+    spec_service: "Behandeling",
+    spec_duration: "Behandelduur",
+    spec_result: "Resultaat",
+    trans_btn: "Boek Deze Transformatie",
+
+    // Comparison Section
+    comp_title: "Waarom We Nooit Nat Knippen",
+    comp_subtitle: "Het revolutionaire verschil tussen een reguliere kapper en een gecertificeerde Italiaanse krullenspecialist.",
+    comp_bad_title: "Traditionele Natte Knip",
+    comp_bad_1: "Trekt krullen nat en recht waardoor krimpingsverschillen worden genegeerd.",
+    comp_bad_2: "Veroorzaakt 'trapjes' en ongelijke happen zodra het haar opdroogt.",
+    comp_bad_3: "Verbreekt natuurlijke krulbundels waardoor extra pluis ontstaat.",
+    comp_bad_4: "Standaard producten met zware siliconen en uitdrogende alcoholen.",
+    comp_good_badge: "De Curlyila Methode",
+    comp_good_title: "Curlyila Droge Krulsnit",
+    comp_good_1: "Geknipt in droge, natuurlijke staat: wat je ziet is direct het echte resultaat.",
+    comp_good_2: "Respecteert het unieke veerkracht- en krimppatroon van elke afzonderlijke krul.",
+    comp_good_3: "Stimuleert perfecte krulklontering en een ronde, harmonieuze coupe.",
+    comp_good_4: "100% Curly Girl goedgekeurd, verrijkt met botanische stoomhydratatie.",
+
+    // Founder Story
+    founder_subtitle: "Meet Your Stylist • Ilaria",
+    founder_title: "Ciao, Ik ben Ilaria",
+    founder_p1: "Geboren in Italië en gepassioneerd door de natuurlijke schoonheid van krullend en getextureerd haar. Jarenlang zag ik hoe traditionele salons krullen behandelden als steil haar — met natte knipbeurten, stijltangen en zware chemicaliën.",
+    founder_p2: "In mijn salon in Mechelen combineer ik Italiaans vakmanschap met geavanceerde droogkniptechnieken en intensieve stoomverzorging. Mijn missie is simpel: jou laten zien hoe adembenemend, veerkrachtig en moeiteloos jouw eigen natuurlijke krullen kunnen zijn.",
+
+    // Consultation Banner
+    consult_title: "Twijfel je over je krultype of behandeling?",
+    consult_desc: "Stuur een foto van je natuurlijke haar via WhatsApp of Instagram voor gratis persoonlijk advies van Curlyila.",
+    consult_wa: "WhatsApp Advies",
 
     // Gallery Filters
     filter_all: "Alles",
-    filter_lashes: "Wimpers",
-    filter_brows: "Wenkbrauwen",
-    filter_lift: "Lash Lift",
-    filter_ba: "Voor & Na",
+    filter_cuts: "Krulsnitten",
+    filter_treatments: "Hydratatie & Spa",
+    filter_styling: "Definitie & Styling",
+    filter_coils: "Afro & Coils",
 
     // Services CTA
     book_service_btn: "Boek behandeling"
@@ -147,134 +177,164 @@ const translations = {
     nav_home: "Accueil",
     nav_services: "Prestations",
     nav_gallery: "Résultats",
-    nav_aftercare: "Entretien",
+    nav_aftercare: "Soin des Boucles",
     nav_faq: "FAQ",
     book_now_btn: "Réserver",
 
     // SEO Meta
-    meta_title: "JC Beauty | Cils & Sourcils Premium à Malines",
+    meta_title: "Curlyila | Coiffeuse Spécialiste Cheveux Bouclés | Malines",
 
     // Hero Section
-    hero_title: "Cils & sourcils premium à Malines",
-    hero_subtitle: "Réveillez-vous avec un regard élégant et soigné sans mascara ni maquillage quotidien.",
-    hero_cta_book: "Réserver un rendez-vous",
+    hero_title: "Spécialiste Cheveux Bouclés & Texturés à Malines",
+    hero_subtitle: "Découvrez des coupes sur cheveux secs boucle par boucle, des soins ultra-hydratants et un rebond incomparable pour tous types de boucles (2A à 4C).",
+    hero_cta_book: "Réserver votre séance",
     hero_cta_services: "Voir les prestations",
-    badge_lash: "Lash Tech Certifiée",
-    badge_brow: "Spécialiste Sourcils",
+    badge_curl: "Spécialiste Cheveux Bouclés",
+    badge_technique: "Coupe sur Cheveux Secs",
     badge_location: "Situé à Malines",
 
-    // Hero & Intro Section (Design Clone Updates)
+    // Hero & Intro Section
     hero_title_welcome: "WELCOME TO",
-    intro_tagline_cursive: "Sublimez Votre Beauté Naturelle",
-    intro_desc: "Chez JC Beauty, nous pensons que les cils et les sourcils ne sont pas universels. Chaque prestation est conçue sur mesure pour rehausser votre beauté naturelle et booster votre confiance.",
-    intro_discover: "DÉCOUVRIR PLUS",
-    intro_badge: "Anti Mascara Club",
-    intro_tagline: "Les filles de Malines portent JC Beauty",
-    intro_title: "Vos yeux, sublimés à la perfection.",
-    intro_p1: "Chez JC Beauty, nous croyons que les cils et sourcils ne sont pas universels. Chaque prestation est conçue sur mesure pour rehausser votre beauté naturelle.",
-    intro_p2: "En fonction de la forme de votre visage, de vos yeux et de la santé de vos cils naturels, nous créons un look adapté à votre style de vie. Que vous choisissiez un rehaussement subtil ou un volume spectaculaire: nous garantissons la perfection dans chaque détail.",
-    intro_sig: "Philosophie JC Beauty",
+    intro_tagline_cursive: "Sublimez Vos Boucles Naturelles",
+    intro_desc: "Chez Curlyila, nous savons que chaque chevelure texturée est unique. Grâce à nos coupes précises sur cheveux secs, nos soins profonds à la vapeur et nos conseils personnalisés, vos boucles retrouvent brillance, définition et liberté.",
+    intro_discover: "DÉCOUVRIR LES SOINS",
+    am_title: "Pourquoi Choisir Curlyila pour Vos Boucles ?",
+    am_benefit1_title: "Coupe Boucle par Boucle",
+    am_benefit1_desc: "Fini les coupes mouillées qui déforment votre tombant naturel. Nous coupons à sec pour respecter l'élasticité exacte de chaque boucle.",
+    am_benefit2_title: "Hydratation Profonde & Vapeur",
+    am_benefit2_desc: "Formules pures sans sulfates ni silicones pour réhydrater en profondeur, sceller l'hydratation et éliminer les frisottis.",
+    am_benefit3_title: "Coaching & Conseils Personnalisés",
+    am_benefit3_desc: "Apprenez les bons gestes et la routine idéale pour entretenir vos boucles facilement à la maison au quotidien.",
+    am_benefit4_title: "Toutes Textures (2A à 4C)",
+    am_benefit4_desc: "Des ondulations souples aux boucles crépues très serrées, chaque motif de boucle bénéficie d'une expertise dédiée.",
 
-    // Anti Mascara Club Benefits
-    am_title: "Pourquoi le Anti Mascara Club ?",
-    am_benefit1_title: "Gagnez du Temps",
-    am_benefit1_desc: "Gagnez 15 minutes chaque matin et réveillez-vous sans effort avec un regard impeccable.",
-    am_benefit2_title: "Zéro Coulure",
-    am_benefit2_desc: "Résistant à la transpiration, à la pluie et aux larmes. Idéal pour un style de vie actif sans retouches.",
-    am_benefit3_title: "Cils plus Sains",
-    am_benefit3_desc: "Pas de recourbe-cils agressif ni de démaquillants décapants qui cassent vos cils naturels.",
-    am_benefit4_title: "Design sur Mesure",
-    am_benefit4_desc: "Un mapping individuel qui lifte et ouvre le regard contrairement au mascara classique standard.",
+    // Press Bar & Transformations
+    press_bar_title: "Vu Dans La Presse & Recommandé",
+    trans_badge: "Résultats Réels en Salon",
+    trans_tag: "Transformation en Vedette",
+    trans_title: "Des Frisottis à la Perfection Italienne",
+    trans_desc: "Grâce à notre Coupe Signature sur cheveux secs et notre soin vapeur, nous transformons les boucles sèches en spirales rebondies et ultra-brillantes.",
+    spec_client: "Type de Boucle",
+    spec_service: "Prestation",
+    spec_duration: "Durée",
+    spec_result: "Résultat",
+    trans_btn: "Réserver cette Transformation",
+
+    // Comparison Section
+    comp_title: "Pourquoi Nous Ne Coupons Jamais Mouillé",
+    comp_subtitle: "La différence majeure entre un salon classique et une experte certifiée des cheveux bouclés.",
+    comp_bad_title: "Coupe Classique sur Cheveux Mouillés",
+    comp_bad_1: "Tire et étire les boucles en ignorant le taux de rétrécissement naturel.",
+    comp_bad_2: "Provoque des dégradés inégaux et l'effet 'pyramide' une fois sec.",
+    comp_bad_3: "Casse les paquets de boucles naturels créant frisottis et perte de forme.",
+    comp_bad_4: "Produits génériques avec silicones occlusifs et alcools asséchants.",
+    comp_good_badge: "La Méthode Curlyila",
+    comp_good_title: "Coupe Signature à Sec Curlyila",
+    comp_good_1: "Réalisée sur cheveux secs: ce que vous voyez en salon est le résultat final.",
+    comp_good_2: "Respecte le ressort et la géométrie unique de chaque boucle.",
+    comp_good_3: "Favorise une belle définition en grappes et une coupe harmonieuse.",
+    comp_good_4: "100% compatible Curly Girl avec soin bienfaisant à la vapeur.",
+
+    // Founder Story
+    founder_subtitle: "Votre Styliste • Ilaria",
+    founder_title: "Ciao, Je suis Ilaria",
+    founder_p1: "Originaire d'Italie, j'ai grandi passionnée par la beauté naturelle des chevelures texturées. Trop longtemps, les salons ont traité les boucles comme des cheveux lisses.",
+    founder_p2: "Dans mon studio à Malines, j'associe le savoir-faire italien à des techniques avancées de coupe à sec. Ma mission: vous faire aimer vos boucles au naturel.",
+
+    // Consultation Banner
+    consult_title: "Un doute sur votre type de boucles ?",
+    consult_desc: "Envoyez une photo de vos cheveux au naturel via WhatsApp ou Instagram pour un conseil personnalisé gratuit de Curlyila.",
+    consult_wa: "Conseil WhatsApp",
 
     // Studio Essentials
-    essentials_title: "Nos Essentiels d'Entretien en Studio",
-    essentials_subtitle: "Prolongez la durée de votre pose avec nos produits d'entretien haut de gamme, disponibles au salon.",
-    product1_name: "Shampoing Cils de Luxe",
-    product1_desc: "Formule douce et sans huile qui nettoie en profondeur, protège les extensions et prévient les bactéries.",
-    product2_name: "Kit Goupillons Premium",
-    product2_desc: "Lot de trois goupillons doux dans un étui protecteur chic pour brosser vos cils au quotidien.",
-    product3_name: "Sérum Hydratant Cils",
-    product3_desc: "Nourrit et fortifie les cils et sourcils naturels après un rehaussement ou un brow lift.",
+    essentials_title: "Nos Essentiels Boucles en Studio",
+    essentials_subtitle: "Prolongez l'effet salon et gardez des boucles rebondies grâce à nos produits professionnels sélectionnés par Curlyila.",
+    product1_name: "Crème Gelée Définissante Luxe",
+    product1_desc: "Gelée crème légère qui sculpte les boucles, offre une tenue souple et protège durablement de l'humidité.",
+    product2_name: "Lait Hydratant Leave-In",
+    product2_desc: "Soin sans rinçage riche en actifs botaniques qui nourrit, démêle sans casser et prépare au coiffage.",
+    product3_name: "Bonnet 100% Soie & Brosse Stimulante",
+    product3_desc: "Protège vos boucles des frottements nocturnes et stimule le cuir chevelu pour une pousse saine.",
 
     // Quiz Section
-    quiz_title: "Trouvez Votre Style de Cils",
-    quiz_style_natural: "Naturel & Pur",
-    quiz_style_glam: "Soft Glam",
-    quiz_style_volume: "Volume Intense",
-    quiz_style_mega: "Méga Glam",
-    quiz_style_lift: "Rehaussement Seul",
-    quiz_rec_title: "Recommandé pour vous:",
+    quiz_title: "Trouvez Votre Diagnostic & Soin Idéal",
+    quiz_style_wavy: "Ondulés (2A-2C)",
+    quiz_style_curly: "Bouclés Classiques (3A-3B)",
+    quiz_style_coily: "Boucles Serrées (3C-4A)",
+    quiz_style_kinky: "Afro & Crépus (4B-4C)",
+    quiz_style_repair: "Transition & Réparation",
+    quiz_rec_title: "Soin recommandé pour vous:",
     quiz_duration: "Durée",
     quiz_price: "Tarif",
     quiz_best_for: "Idéal pour",
-    quiz_book_rec: "Réserver ce style",
+    quiz_book_rec: "Réserver ce soin",
 
     // Services categories
-    cat_lashes: "Cils",
-    cat_brows: "Sourcils",
-    cat_packs: "Packs Beauté",
+    cat_cuts: "Coupes Bouclées",
+    cat_treatments: "Soins & Détox",
+    cat_styling: "Forfaits & Transformations",
 
     // Trust Section
-    trust_title: "Beauté en Toute Confiance",
-    trust_p1_title: "La Santé des Cils d'Abord",
-    trust_p1_desc: "Nous privilégions la santé de vos cils naturels. Les extensions sont appliquées minutieusement sans endommager le cycle de pousse naturel.",
-    trust_p2_title: "Mapping sur Mesure",
-    trust_p2_desc: "Chaque pose est unique. Nous analysons l'architecture de votre visage pour concevoir un design qui ouvre et lifte votre regard.",
-    trust_p3_title: "Qualité Certifiée",
-    trust_p3_desc: "Notre praticienne est qualifiée et certifiée. Nous travaillons exclusivement avec des colles et matériaux hypoallergéniques haut de gamme.",
+    trust_title: "Vos Boucles entre des Mains Expertes",
+    trust_p1_title: "Techniques de Coupe Spécialisées",
+    trust_p1_desc: "Curlyila maîtrise les méthodes de coupe à sec respectant le taux de rétrécissement (shrinkage) et la forme globale de vos boucles.",
+    trust_p2_title: "Formules 100% Respectueuses",
+    trust_p2_desc: "Sans sulfates agressifs, huiles minérales ni silicones lourds. Nous utilisons exclusivement des soins haut de gamme nourrissants.",
+    trust_p3_title: "Qualité Certifiée & Expérience Privée",
+    trust_p3_desc: "Un accueil sur-mesure et une atmosphère luxueuse au cœur de Malines pour un moment de détente et un résultat éclatant.",
 
     // Reviews Section
     reviews_title: "Avis Clients",
     reviews_placeholder: "Les avis clients seront bientôt disponibles en ligne.",
-    review_cta_text: "Déjà cliente chez nous ?",
+    review_cta_text: "Déjà cliente chez Curlyila ?",
     review_cta_btn: "Laissez-nous un avis",
 
     // Final CTA
-    final_cta_title: "Prête Pour Votre Nouveau Regard ?",
-    final_cta_subtitle: "Réservez votre séance chez JC Beauty et repartez avec un look élégant, naturel et parfaitement soigné.",
+    final_cta_title: "Prête Pour Votre Transformation Bouclée ?",
+    final_cta_subtitle: "Réservez votre séance chez Curlyila et découvrez le plein potentiel de vos boucles naturelles.",
     final_cta_btn: "Réserver",
 
     // Aftercare Items
-    care_1_title: "Garder au Sec",
-    care_1_desc: "Gardez vos cils au sec pendant les 24-48 heures suivant la pose. Évitez hammam, sauna et séances de sport intensives pour optimiser la tenue de la colle.",
-    care_2_title: "Brossage Quotidien",
-    care_2_desc: "Brossez délicatement vos extensions chaque jour à l'aide d'un goupillon propre pour conserver un alignement parfait.",
-    care_3_title: "Éviter les Huiles",
-    care_3_desc: "N'utilisez pas de démaquillants, crèmes ou cosmétiques gras autour des yeux. Le gras dissout la colle et fait tomber les extensions prématurément.",
-    care_4_title: "Ne pas Frotter ni Tirer",
-    care_4_desc: "Ne tirez ou ne frottez jamais sur vos cils. Cela risquerait d'arracher vos cils naturels. Faites toujours retirer vos extensions en salon.",
-    care_5_title: "Remplissages Réguliers",
-    care_5_desc: "Les cils tombent naturellement. Réservez un remplissage toutes les 2 à 3 semaines pour conserver une ligne de cils dense et soignée.",
-    care_6_title: "Nettoyage Adapté",
-    care_6_desc: "Nettoyez vos cils 2 à 3 fois par semaine avec un shampoing pour cils spécifique afin de retirer résidus de maquillage, sébum et poussières.",
+    care_1_title: "L'Hydratation est la Clé",
+    care_1_desc: "Appliquez vos soins leave-in et produits coiffants sur cheveux encore trempés pour sceller l'eau au cœur de la fibre.",
+    care_2_title: "Protection Satin / Soie la Nuit",
+    care_2_desc: "Dormez sur une taie en soie ou portez un bonnet en satin pour éliminer les frottements et préserver la définition des boucles.",
+    care_3_title: "Serviette en Microfibre",
+    care_3_desc: "Bannissez les serviettes en éponge classiques. Privilégiez la microfibre ou la technique du plopping pour préserver le ressort.",
+    care_4_title: "Évitez les Sulfates Asséchants",
+    care_4_desc: "Utilisez un nettoyant doux sans sulfates et évitez les silicones non solubles qui étouffent et alourdissent les boucles.",
+    care_5_title: "Séchage Diffuseur Basse Chaleur",
+    care_5_desc: "Séchez au diffuseur avec une chaleur modérée et un flux d'air doux. Ne touchez pas aux boucles avant qu'elles soient sèches à 100%.",
+    care_6_title: "Entretien Régulier",
+    care_6_desc: "Programmez une coupe de rafraîchissement tous les 3 à 4 mois pour retirer les pointes fourchues et redonner du volume.",
 
     // How it works
     booking_title: "Comment ça Marche",
-    step1_title: "Choisissez votre prestation",
-    step1_desc: "Sélectionnez votre soin préféré pour les cils ou sourcils depuis notre catalogue ou directement sur Setmore.",
+    step1_title: "Choisissez votre soin",
+    step1_desc: "Sélectionnez votre coupe, soin profond ou forfait transformation depuis notre menu ou sur la page de réservation.",
     step2_title: "Payez l'acompte",
-    step2_desc: "Réglez un acompte non remboursable de 15 € pour valider définitivement votre créneau dans l'agenda.",
-    step3_title: "Confirmation reçue",
-    step3_desc: "Vous recevrez immédiatement un e-mail et un SMS avec les détails et l'adresse exacte du studio.",
-    step4_title: "Profitez du résultat",
-    step4_desc: "Arrivez à l'heure, détendez-vous dans notre fauteuil confortable et réveillez-vous avec un regard transformé.",
-    cta_box_title: "Réservez Votre Expérience Exclusive",
-    cta_box_desc: "Planifiez votre séance dès aujourd'hui. Des questions sur nos soins ou besoin d'un conseil ? N'hésitez pas à nous contacter.",
+    step2_desc: "Réglez un acompte de 15 € non remboursable pour bloquer définitivement votre créneau horaire.",
+    step3_title: "Confirmation & Préparation",
+    step3_desc: "Vous recevrez immédiatement un email et SMS contenant l'adresse du studio et les conseils de préparation pour votre venue.",
+    step4_title: "Admirez vos boucles",
+    step4_desc: "Venez les cheveux secs et démêlés, détendez-vous dans notre fauteuil et repartez avec des boucles sublimes et rebondies.",
+    cta_box_title: "Réservez Votre Expérience Bouclée chez Curlyila",
+    cta_box_desc: "Planifiez votre séance dès aujourd'hui. Une question sur votre type de boucles ou un conseil ? Contactez-nous avec plaisir.",
     cta_box_btn: "Vers la page de réservation",
 
     // Footer
-    footer_brand_desc: "JC Beauty est un studio de cils et sourcils haut de gamme basé à Malines, Belgique. Nous visons la perfection et offrons des designs sur-mesure respectant la santé de vos cils.",
+    footer_brand_desc: "Curlyila est un studio privé spécialisé dans la coupe et le soin des cheveux bouclés, frisés et crépus (2A à 4C) situé à Malines, Belgique.",
     footer_links_title: "Navigation",
     footer_contact_title: "Contact & Adresse",
     footer_map_hint: "(Adresse exacte dans l'e-mail de confirmation)",
-    footer_creator: "Créé pour incarner le luxe",
+    footer_creator: "Créé pour sublimer les boucles",
 
     // Gallery Filters
     filter_all: "Tout",
-    filter_lashes: "Cils",
-    filter_brows: "Sourcils",
-    filter_lift: "Lash Lift",
-    filter_ba: "Avant / Après",
+    filter_cuts: "Coupes Bouclées",
+    filter_treatments: "Hydratation & Spa",
+    filter_styling: "Définition & Styling",
+    filter_coils: "Afro & Coils",
 
     // Services CTA
     book_service_btn: "Réserver ce soin"
@@ -284,441 +344,406 @@ const translations = {
     nav_home: "Home",
     nav_services: "Services",
     nav_gallery: "Gallery",
-    nav_aftercare: "Aftercare",
+    nav_aftercare: "Curl Care",
     nav_faq: "FAQ",
     book_now_btn: "Book Now",
 
     // SEO Meta
-    meta_title: "JC Beauty | Premium lashes & brows in Mechelen",
+    meta_title: "Curlyila | Hairstylist Specializing in Curly Hair | Mechelen",
 
     // Hero Section
-    hero_title: "Premium lashes & brows in Mechelen",
-    hero_subtitle: "Wake up with an elegant, polished look without applying mascara or brow makeup daily.",
-    hero_cta_book: "Book appointment",
+    hero_title: "Curly Hair Specialist & Hairstylist in Mechelen",
+    hero_subtitle: "Experience precision dry curl cuts, deep steam hydration treatments, and ultimate bounce for all texture types (2A to 4C).",
+    hero_cta_book: "Book your curl session",
     hero_cta_services: "View services",
-    badge_dash: "Certified Lash Tech",
-    badge_brow: "Brow Specialist",
+    badge_curl: "Curly Hair Specialist & Stylist",
+    badge_technique: "Dry Curl-by-Curl Cut",
     badge_location: "Located in Mechelen",
 
-    // Hero & Intro Section (Design Clone Updates)
+    // Hero & Intro Section
     hero_title_welcome: "WELCOME TO",
-    intro_tagline_cursive: "Embrace Your Natural Beauty",
-    intro_desc: "At JC Beauty, we believe lashes and brows are not one-size-fits-all. Every treatment is custom-designed to enhance your natural beauty and boost your confidence.",
-    intro_discover: "DISCOVER MORE",
-    intro_badge: "Anti Mascara Club",
-    intro_tagline: "Mechelen girls wear JC Beauty",
-    intro_title: "Your eyes, perfectly accentuated.",
-    intro_p1: "At JC Beauty, we believe lashes and brows are not one-size-fits-all. Every treatment is custom-designed to enhance your unique natural beauty.",
-    intro_p2: "Based on your face shape, eye configuration, and natural lash health, we create a bespoke look that integrates seamlessly with your lifestyle. Whether a subtle lift or stunning volume: we guarantee perfection down to the smallest detail.",
-    intro_sig: "JC Beauty Philosophy",
+    intro_tagline_cursive: "Embrace Your Natural Curls",
+    intro_desc: "At Curlyila, we believe no two curls are alike. Through specialized dry cutting, botanical steam treatments, and bespoke coaching, we help your natural texture thrive with unrivaled bounce and shine.",
+    intro_discover: "DISCOVER SERVICES",
+    am_title: "Why Choose Curly Hair Specialist Curlyila?",
+    am_benefit1_title: "Dry Curl-by-Curl Cutting",
+    am_benefit1_desc: "No wet cuts that distort your natural shape. We cut hair dry so each ringlet falls into its natural pattern and bounce.",
+    am_benefit2_title: "Deep Steam Hydration",
+    am_benefit2_desc: "Pure, sulphate-free and silicone-free formulations that deeply moisturize dry strands and eliminate frizz permanently.",
+    am_benefit3_title: "Personalized Curl Coaching",
+    am_benefit3_desc: "Learn the exact styling routine, product cocktail, and application techniques to keep your curls defined at home.",
+    am_benefit4_title: "All Texture Types (2A to 4C)",
+    am_benefit4_desc: "From soft beach waves to dense afro coils, every curl pattern receives dedicated, knowledgeable care.",
 
-    // Anti Mascara Club Benefits
-    am_title: "Why the Anti Mascara Club?",
-    am_benefit1_title: "Save Time",
-    am_benefit1_desc: "Save 15 minutes every morning and wake up effortlessly with a flawless lash line.",
-    am_benefit2_title: "Zero Smudges",
-    am_benefit2_desc: "Sweat, rain, and tear-resistant. Perfect for an active lifestyle without running mascara.",
-    am_benefit3_title: "Healthy Lashes",
-    am_benefit3_desc: "No damaging eyelash curlers or harsh makeup removers that break natural lashes.",
-    am_benefit4_title: "Custom Designed",
-    am_benefit4_desc: "Individual mapping that lifts and defines your eye shape, unlike standard mascara.",
+    // Press Bar & Transformations
+    press_bar_title: "As Featured In & Loved By Media",
+    trans_badge: "Real Salon Results",
+    trans_tag: "Featured Transformation",
+    trans_title: "From Frizz to Italian Curl Perfection",
+    trans_desc: "With our Signature Dry Curl Cut and deep steam hydration, we transform dry, undefined curls into springy, radiant ringlets without heat damage.",
+    spec_client: "Client Texture",
+    spec_service: "Service",
+    spec_duration: "Duration",
+    spec_result: "Result",
+    trans_btn: "Book This Transformation",
+
+    // Comparison Section
+    comp_title: "Why We Never Cut Wet",
+    comp_subtitle: "The revolutionary difference between a standard salon and a certified Italian curl specialist.",
+    comp_bad_title: "Traditional Wet Cut",
+    comp_bad_1: "Pulls curls wet and straight, ignoring natural shrinkage differences.",
+    comp_bad_2: "Creates awkward layers and the dreaded 'triangle' shape once dry.",
+    comp_bad_3: "Disrupts natural curl clumps, causing increased frizz.",
+    comp_bad_4: "Standard salon products with heavy silicones and drying alcohols.",
+    comp_good_badge: "The Curlyila Method",
+    comp_good_title: "Curlyila Dry Signature Cut",
+    comp_good_1: "Cut in its natural dry state: what you see is the true final shape.",
+    comp_good_2: "Respects individual curl elasticity and shrinkage across your head.",
+    comp_good_3: "Encourages juicy curl clumping and a balanced, round silhouette.",
+    comp_good_4: "100% Curly Girl compliant enriched with botanical steam therapy.",
+
+    // Founder Story
+    founder_subtitle: "Meet Your Stylist • Ilaria",
+    founder_title: "Ciao, I'm Ilaria",
+    founder_p1: "Born in Italy and passionate about the natural beauty of textured hair. For too long, traditional salons treated curls like straight hair.",
+    founder_p2: "In my Mechelen studio, I blend Italian artistry with advanced dry curl techniques and botanical moisture therapy. My mission: to empower you to love your natural crown.",
+
+    // Consultation Banner
+    consult_title: "Unsure about your curl pattern or treatment?",
+    consult_desc: "Send a photo of your natural hair on WhatsApp or Instagram for free personal advice from Curlyila.",
+    consult_wa: "WhatsApp Advice",
 
     // Studio Essentials
-    essentials_title: "Our Studio Aftercare Essentials",
-    essentials_subtitle: "Keep your lashes looking perfect longer with our curated premium aftercare products, available at the studio.",
-    product1_name: "Luxury Lash Shampoo",
-    product1_desc: "Gentle, oil-free formula that cleanses extensions, protects adhesive, and prevents bacterial buildup.",
-    product2_name: "Premium Lash Spoolie Kit",
-    product2_desc: "Set of three soft spoolie brushes in a chic protective case for daily lash styling.",
-    product3_name: "Hydrating Lash Serum",
-    product3_desc: "Nutrient-rich serum to fortify and hydrate natural lashes and brows after a lift or lamination.",
+    essentials_title: "Our Studio Curl Essentials",
+    essentials_subtitle: "Keep your curls fresh and frizz-free with these salon-grade products handpicked by Curlyila.",
+    product1_name: "Luxury Curl Defining Custard",
+    product1_desc: "Lightweight gel-custard that sculpts curls, provides touchable hold, and shields against humidity.",
+    product2_name: "Hydrating Leave-In Milk",
+    product2_desc: "Deeply nourishing botanical milk that detangles, hydrates, and primes curls for styling without weighing them down.",
+    product3_name: "100% Silk Bonnet & Scalp Brush",
+    product3_desc: "Protects curls against nightly friction and invigorates scalp circulation for healthy hair growth.",
 
     // Quiz Section
-    quiz_title: "Find Your Lash Signature",
-    quiz_style_natural: "Natural & Clean",
-    quiz_style_glam: "Soft Glam",
-    quiz_style_volume: "Full Volume",
-    quiz_style_mega: "Mega Glam",
-    quiz_style_lift: "Lash Lift Only",
-    quiz_rec_title: "Recommended for you:",
+    quiz_title: "Find Your Curl Pattern & Ideal Treatment",
+    quiz_style_wavy: "Wavy (2A-2C)",
+    quiz_style_curly: "Classic Curly (3A-3B)",
+    quiz_style_coily: "Tight Curls (3C-4A)",
+    quiz_style_kinky: "Afro Coils (4B-4C)",
+    quiz_style_repair: "Repair & Transition",
+    quiz_rec_title: "Recommended treatment for you:",
     quiz_duration: "Duration",
     quiz_price: "Price",
     quiz_best_for: "Best for",
-    quiz_book_rec: "Book this style",
+    quiz_book_rec: "Book this treatment",
 
     // Services categories
-    cat_lashes: "Lashes",
-    cat_brows: "Brows",
-    cat_packs: "Packs",
+    cat_cuts: "Curl Cuts",
+    cat_treatments: "Treatments & Detox",
+    cat_styling: "Packages & Makeovers",
 
     // Trust Section
-    trust_title: "Beauty in Good Hands",
-    trust_p1_title: "Natural Lash Health First",
-    trust_p1_desc: "We prioritize natural lash health above all. Eyelash extensions are meticulously isolated and applied without damaging your natural growth cycle.",
-    trust_p2_title: "Face & Eye Shape Mapping",
-    trust_p2_desc: "No two sets are the same. We analyze your facial features and eye shape to create a custom lash map that opens and lifts your gaze.",
-    trust_p3_title: "Certified Expertise",
-    trust_p3_desc: "Our specialist is fully trained and certified. We use only premium, hypoallergenic adhesives and lightweight luxury lashes.",
+    trust_title: "Your Curls in Expert Hands",
+    trust_p1_title: "Specialized Curl Techniques",
+    trust_p1_desc: "Curlyila is specifically trained in dry curl sculpting techniques that respect your natural shrinkage and curl geometry.",
+    trust_p2_title: "100% Clean Curl Formulations",
+    trust_p2_desc: "Zero harsh sulphates, drying alcohols, or heavy silicones. We utilize only nutrient-dense botanical moisture.",
+    trust_p3_title: "Certified Quality & Private Luxury",
+    trust_p3_desc: "One-on-one attention in a calming, luxury salon setting in Mechelen for a restorative and transformative experience.",
 
     // Reviews Section
     reviews_title: "Client Reviews",
     reviews_placeholder: "Client reviews are coming soon.",
-    review_cta_text: "Had your treatment recently?",
+    review_cta_text: "Had your curls styled by Curlyila?",
     review_cta_btn: "Leave a review",
 
     // Final CTA
-    final_cta_title: "Ready for Your Next Lash Era?",
-    final_cta_subtitle: "Book your JC Beauty appointment and leave with a look that feels effortless, polished, and uniquely yours.",
+    final_cta_title: "Ready for Your Ultimate Curl Transformation?",
+    final_cta_subtitle: "Book your appointment at Curlyila and unleash the full beauty, volume, and definition of your natural texture.",
     final_cta_btn: "Book Now",
 
     // Aftercare Items
-    care_1_title: "Keep Them Dry",
-    care_1_desc: "Keep lashes completely dry for the first 24-48 hours. Avoid steam, saunas, and intense workouts to ensure the adhesive cures perfectly.",
-    care_2_title: "Daily Brushing",
-    care_2_desc: "Gently brush your eyelash extensions once a day with a clean spoolie to keep them properly aligned and fluffy.",
-    care_3_title: "Avoid Oil Products",
-    care_3_desc: "Do not use oil-based cleansers, creams, or cosmetics around your eyes. Oils break down the lash adhesive, causing premature loss.",
-    care_4_title: "Do Not Rub or Pull",
-    care_4_desc: "Never rub your eyes or pull at the extensions, as this can damage your natural lashes. Always have extensions professionally removed.",
-    care_5_title: "Book On-time Refills",
-    care_5_desc: "Lashes shed naturally. Book refill appointments every 2 to 3 weeks to keep your lash line looking dense, elegant, and full.",
-    care_6_title: "Wash Your Lashes",
-    care_6_desc: "Clean your lashes 2-3 times a week with a specialized lash shampoo to prevent buildup of sebum, makeup, and dead skin.",
+    care_1_title: "Hydration is Key",
+    care_1_desc: "Always apply your leave-in conditioner and stylers to soaking wet hair. Water is the secret to frizz-free curl clumping.",
+    care_2_title: "Silk or Satin Night Protection",
+    care_2_desc: "Sleep on a 100% Mulberry silk pillowcase or wear a satin bonnet to prevent friction, knots, and moisture loss.",
+    care_3_title: "Microfiber Towel Only",
+    care_3_desc: "Never use a standard terrycloth towel. Gently scrunch and plop with a microfiber towel or cotton t-shirt.",
+    care_4_title: "Avoid Harsh Sulphates & Silicones",
+    care_4_desc: "Use mild, sulphate-free cleansers and avoid non-water-soluble silicones that build up and suffocate curl patterns.",
+    care_5_title: "Diffuse on Low Heat",
+    care_5_desc: "Diffuse using a deep bowl diffuser on low speed and medium heat. Avoid touching curls until 100% dry to lock in definition.",
+    care_6_title: "Regular Maintenance Trims",
+    care_6_desc: "Book a dry curl trim every 3 to 4 months to prevent split ends, tangles, and maintain the perfect rounded shape.",
 
     // How it works
     booking_title: "How It Works",
-    step1_title: "Choose your service",
-    step1_desc: "Select your preferred lash or brow service from our menu or directly on our Setmore page.",
+    step1_title: "Choose your curl service",
+    step1_desc: "Select your desired curl cut, treatment, or full makeover package from our menu or directly on Setmore.",
     step2_title: "Pay deposit",
-    step2_desc: "Pay a non-refundable deposit of €15 to secure your time slot in our booking schedule.",
+    step2_desc: "Pay a non-refundable deposit of €15 to secure your exclusive slot in our salon schedule.",
     step3_title: "Receive confirmation",
-    step3_desc: "You will immediately receive an email and SMS confirmation containing salon address details.",
-    step4_title: "Enjoy the result",
-    step4_desc: "Arrive on time, relax in our luxury chair, and wake up with a stunning, effortless gaze.",
-    cta_box_title: "Book Your Exclusive Experience",
-    cta_box_desc: "Schedule your session today. If you have any questions or need style recommendations, feel free to reach out.",
+    step3_desc: "You'll immediately receive an email and SMS with address details and instructions on how to arrive with your hair prepped.",
+    step4_title: "Enjoy your curls",
+    step4_desc: "Arrive with 100% dry, detangled curls in their natural state and leave with bouncy, defined, healthy curls.",
+    cta_box_title: "Book Your Exclusive Curl Experience",
+    cta_box_desc: "Schedule your session today. If you have questions about your curl pattern or need advice, please reach out.",
     cta_box_btn: "Go to Booking Page",
 
     // Footer
-    footer_brand_desc: "JC Beauty is a premium lash & brow studio based in Mechelen, Belgium. We strive for absolute perfection, crafting bespoke sets that enhance and protect your natural lashes.",
+    footer_brand_desc: "Curlyila is a luxury curly hair studio located in Mechelen, Belgium. Specializing in dry curl-by-curl cutting, deep moisture therapy, and textured hair styling (2A to 4C).",
     footer_links_title: "Navigation",
     footer_contact_title: "Contact & Location",
     footer_map_hint: "(Exact address in booking confirmation)",
-    footer_creator: "Designed for pure luxury",
+    footer_creator: "Designed for pure curl luxury",
 
     // Gallery Filters
     filter_all: "All",
-    filter_lashes: "Lashes",
-    filter_brows: "Brows",
-    filter_lift: "Lash Lift",
-    filter_ba: "Before & After",
+    filter_cuts: "Curl Cuts",
+    filter_treatments: "Hydration & Spa",
+    filter_styling: "Definition & Styling",
+    filter_coils: "Afro & Coils",
 
     // Services CTA
-    book_service_btn: "Book treatment"
+    book_service_btn: "Book service"
   }
 };
 
-// 2. Services Data
+// 2. Services Data for Curly Hair Specialist
 const servicesData = [
-  // LASHES
+  // CURL CUTS
   {
-    id: "light_volume",
-    category: "lashes",
-    price: "€50",
+    id: "signature_curl_cut",
+    category: "cuts",
+    price: "€75",
     duration: { nl: "90 min.", fr: "90 min.", en: "90 min." },
-    title: { nl: "Light Volume", fr: "Volume Léger", en: "Light Volume" },
+    title: {
+      nl: "Signature Curly Cut & Styling",
+      fr: "Coupe Signature Boucles & Coiffage",
+      en: "Signature Curly Cut & Styling"
+    },
     desc: {
-      nl: "Wimperextensions voor een zachte, natuurlijk ogende mascara-look. Perfect voor dagelijkse elegantie.",
-      fr: "Extensions de cils créant un effet mascara doux et naturel. Idéal au quotidien.",
-      en: "Eyelash extensions creating a soft, natural mascara-like effect. Perfect for daily elegance."
+      nl: "Gespecialiseerde droogknipbeurt krul voor krul, gevolgd door een luxe wasbeurt, hydraterende treatment, kruldefinitie en diffuser-styling.",
+      fr: "Coupe sur-mesure sur cheveux secs boucle par boucle, suivie d'un shampoing doux, soin hydratant, définition et séchage au diffuseur.",
+      en: "Custom dry curl-by-curl precision cut, followed by a gentle cleanse, hydrating treatment, curl definition, and diffuser styling."
     },
     bestFor: {
-      nl: "Een subtiele versterking van je eigen wimpers.",
-      fr: "Un embellissement subtil de vos propres cils.",
-      en: "A subtle enhancement of your natural lash line."
+      nl: "Iedereen die een prachtige vorm, meer volume en levendige kruldefinitie wil.",
+      fr: "Celles qui recherchent une forme harmonieuse, du volume et des boucles rebondies.",
+      en: "Anyone wanting a flattering shape, enhanced volume, and defined curls."
     }
   },
   {
-    id: "medium_volume",
-    category: "lashes",
+    id: "curly_cut_refresh",
+    category: "cuts",
     price: "€55",
-    duration: { nl: "105 min.", fr: "105 min.", en: "105 min." },
-    title: { nl: "Medium Volume", fr: "Volume Moyen", en: "Medium Volume" },
+    duration: { nl: "60 min.", fr: "60 min.", en: "60 min." },
+    title: {
+      nl: "Curly Cut Refresh (Onderhoud)",
+      fr: "Entretien & Rafraîchissement Coupe",
+      en: "Curly Cut Refresh (Maintenance)"
+    },
     desc: {
-      nl: "Geeft extra diepte, dichtheid en een prachtig gedefinieerde oogopslag zonder zwaar aan te voelen.",
-      fr: "Offre plus de profondeur, de densité et une définition impeccable du regard sans alourdir.",
-      en: "Provides extra depth, density, and a beautifully defined gaze without feeling heavy."
+      nl: "Onderhoudsknip voor terugkerende klanten (binnen 3-4 maanden). Verwijdert dode puntjes en herstelt de ideale salonvorm.",
+      fr: "Coupe d'entretien pour clientes régulières (sous 3-4 mois). Élimine les pointes abîmées et redéfinit la coupe.",
+      en: "Maintenance trim for returning clients (within 3-4 months). Removes split ends and restores the shape."
     },
     bestFor: {
-      nl: "Cliënten die houden van zichtbare volheid en definitie.",
-      fr: "Les clientes qui aiment une densité et une définition visibles.",
-      en: "Clients who love noticeable fullness and definition."
+      nl: "Bestaande klanten die hun krulsnit fris en veerkrachtig willen houden.",
+      fr: "Conserver une coupe impeccable et des pointes saines entre deux transformations.",
+      en: "Maintaining your signature curl shape and preventing split ends."
     }
   },
   {
-    id: "mega_volume",
-    category: "lashes",
-    price: "€65",
-    duration: { nl: "120 min.", fr: "120 min.", en: "120 min." },
-    title: { nl: "Mega Volume", fr: "Méga Volume", en: "Mega Volume" },
-    desc: {
-      nl: "Onze meest glamoureuze, volle set met dichte waaiers voor een adembenemend drama-effect.",
-      fr: "Notre pose la plus dense et glamour pour un regard sophistiqué et spectaculaire.",
-      en: "Our most glamorous, full set with dense fans for a breathtaking, dramatic effect."
-    },
-    bestFor: {
-      nl: "Een opvallende, luxueuze en intense oogopslag.",
-      fr: "Un regard intense, luxueux et très affirmé.",
-      en: "A striking, luxurious, and intense look."
-    }
-  },
-  {
-    id: "refill_light",
-    category: "lashes",
+    id: "wash_curl_style",
+    category: "cuts",
     price: "€45",
     duration: { nl: "60 min.", fr: "60 min.", en: "60 min." },
-    title: { nl: "Refill Light Volume", fr: "Remplissage Volume Léger", en: "Refill Light Volume" },
+    title: {
+      nl: "Wash, Hydrate & Curl Definition",
+      fr: "Lavage, Hydratation & Définition",
+      en: "Wash, Hydrate & Curl Definition"
+    },
     desc: {
-      nl: "Bijvullen van je Light Volume set binnen 2-3 weken om de set mooi vol te houden.",
-      fr: "Entretien et remplissage de votre pose Volume Léger (sous 2-3 semaines).",
-      en: "Refilling your Light Volume set within 2-3 weeks to maintain its freshness."
+      nl: "Zonder knippen: luxe reiniging, intens masker onder stoom, professionele stylingtechniek (raking/praying hands) en diffuseren.",
+      fr: "Sans coupe: lavage doux, masque sous vapeur, technique de définition professionnelle et séchage au diffuseur.",
+      en: "No cutting: gentle cleanse, deep steam mask, expert curl definition techniques, and diffuser drying."
     },
     bestFor: {
-      nl: "Het behouden van je natuurlijke mascara look.",
-      fr: "Garder votre effet mascara impeccable.",
-      en: "Maintaining your natural mascara look."
+      nl: "Een speciale gelegenheid of wanneer je krullen een professionele boost nodig hebben.",
+      fr: "Un événement spécial ou pour redonner vie et brillance à vos boucles.",
+      en: "Special occasions or when your curls need a professional moisture recharge."
     }
   },
   {
-    id: "refill_medium",
-    category: "lashes",
-    price: "€50",
-    duration: { nl: "75 min.", fr: "75 min.", en: "75 min." },
-    title: { nl: "Refill Medium Volume", fr: "Remplissage Volume Moyen", en: "Refill Medium Volume" },
-    desc: {
-      nl: "Bijvullen van je Medium Volume set binnen 2-3 weken voor een continu volle look.",
-      fr: "Remplissage et restructuration de votre pose Volume Moyen (sous 2-3 semaines).",
-      en: "Refilling your Medium Volume set within 2-3 weeks for continuous definition."
-    },
-    bestFor: {
-      nl: "Het onderhouden van je perfect gedefinieerde set.",
-      fr: "Entretenir votre définition et volume parfaits.",
-      en: "Maintaining your perfectly defined volume set."
-    }
-  },
-  {
-    id: "refill_mega",
-    category: "lashes",
-    price: "€60",
-    duration: { nl: "90 min.", fr: "90 min.", en: "90 min." },
-    title: { nl: "Refill Mega Volume", fr: "Remplissage Méga Volume", en: "Refill Mega Volume" },
-    desc: {
-      nl: "Bijvullen van je Mega Volume set binnen 2-3 weken om de maximale dichtheid te bewaren.",
-      fr: "Remplissage ultra-précis pour votre pose Méga Volume (sous 2-3 semaines).",
-      en: "Refilling your Mega Volume set within 2-3 weeks to preserve maximum density."
-    },
-    bestFor: {
-      nl: "Het behouden van je volle, glamoureuze wimperlijn.",
-      fr: "Garder votre ligne de cils intense et fournie.",
-      en: "Preserving your full, glamorous lash line."
-    }
-  },
-  {
-    id: "lash_lift",
-    category: "lashes",
-    price: "€45",
-    duration: { nl: "60 min.", fr: "60 min.", en: "60 min." },
-    title: { nl: "Lash Lift", fr: "Rehaussement de Cils", en: "Lash Lift" },
-    desc: {
-      nl: "Een chemische lift van je natuurlijke wimpers vanaf de wortel. Creëert een open, wakkere blik.",
-      fr: "Recourbement de vos propres cils naturels depuis la racine. Ouvre intensément le regard.",
-      en: "A chemical lift of your natural eyelashes from the root. Creates an open, awake look."
-    },
-    bestFor: {
-      nl: "Een onderhoudsvriendelijke routine zonder extensions.",
-      fr: "Une routine simple et sans entretien d'extensions.",
-      en: "A low-maintenance routine without wearing extensions."
-    }
-  },
-  {
-    id: "lash_lift_colour",
-    category: "lashes",
-    price: "€55",
-    duration: { nl: "75 min.", fr: "75 min.", en: "75 min." },
-    title: { nl: "Lash Lift & Colour", fr: "Rehaussement & Teinture", en: "Lash Lift & Colour" },
-    desc: {
-      nl: "Lash lift gecombineerd met wimperverf voor extra definitie en een diepzwarte, sprekende kleur.",
-      fr: "Rehaussement associé à une teinture des cils pour une couleur intense et une définition maximale.",
-      en: "Lash lift combined with lash tinting for extra definition and a deep black, noticeable color."
-    },
-    bestFor: {
-      nl: "Cliënten met lichte wimpers die geen mascara willen dragen.",
-      fr: "Celles qui ont les cils clairs et veulent se passer de mascara.",
-      en: "Clients with light lashes who want to skip mascara entirely."
-    }
-  },
-  
-  // BROWS
-  {
-    id: "brow_lift",
-    category: "brows",
+    id: "kids_teen_curl",
+    category: "cuts",
     price: "€45",
     duration: { nl: "45 min.", fr: "45 min.", en: "45 min." },
-    title: { nl: "Brow Lift (Lamination)", fr: "Brow Lift (Lamination)", en: "Brow Lift (Lamination)" },
+    title: {
+      nl: "Kids & Teens Curly Cut (t/m 16j)",
+      fr: "Coupe Boucles Enfants & Ados",
+      en: "Kids & Teens Curly Cut (up to 16y)"
+    },
     desc: {
-      nl: "Wenkbrauwharen worden in een opwaartse, volle richting gestileerd. Temt stugge haartjes.",
-      fr: "Restructuration et lamination des sourcils vers le haut. Discipline les poils rebelles.",
-      en: "Styling eyebrow hairs in an upward, fluffy direction. Tames unruly brow hairs."
+      nl: "Zachte, geduldige droogknipbeurt afgestemd op jonge krullenbollen, inclusief eenvoudige tips voor ouders en tieners.",
+      fr: "Coupe douce sur cheveux secs adaptée aux plus jeunes, accompagnée de conseils simples d'entretien.",
+      en: "Gentle dry curl cut tailored for young curls, including easy daily care tips for parents and teens."
     },
     bestFor: {
-      nl: "Vollere, natuurlijk uitziende wenkbrauwen met vorm.",
-      fr: "Des sourcils plus denses, structurés et naturels.",
-      en: "Fuller, natural-looking brows with defined structure."
-    }
-  },
-  {
-    id: "brow_lift_henna",
-    category: "brows",
-    price: "€50",
-    duration: { nl: "60 min.", fr: "60 min.", en: "60 min." },
-    title: { nl: "Brow Lift & Henna Brow", fr: "Brow Lift & Henné Sourcils", en: "Brow Lift & Henna Brow" },
-    desc: {
-      nl: "Brow lift gecombineerd met henna-kleuring op zowel de wenkbrauwharen als de onderliggende huid.",
-      fr: "Brow lift associé à une teinture au henné qui colore les poils et la peau sous-jacente.",
-      en: "Brow lift combined with henna tinting on both eyebrow hairs and the underlying skin."
-    },
-    bestFor: {
-      nl: "Een strakke, getekende vorm die gaatjes opvult.",
-      fr: "Un design net et dessiné qui comble les manques.",
-      en: "A crisp, filled-in shape that covers sparse areas."
+      nl: "Kinderen en tieners die hun natuurlijke krullen met trots willen dragen.",
+      fr: "Les enfants et adolescents souhaitant valoriser leurs boucles naturelles.",
+      en: "Kids and teens learning to embrace and care for their natural texture."
     }
   },
 
-  // PACKS
+  // TREATMENTS & DETOX
   {
-    id: "pack_1",
-    category: "packs",
-    price: "€80",
+    id: "deep_steam_moisture",
+    category: "treatments",
+    price: "€45",
+    duration: { nl: "45 min.", fr: "45 min.", en: "45 min." },
+    title: {
+      nl: "Deep Moisture & Steam Therapy",
+      fr: "Thérapie d'Hydratation Profonde à la Vapeur",
+      en: "Deep Moisture & Steam Therapy"
+    },
+    desc: {
+      nl: "Intens hydraterend botanisch masker geactiveerd met micro-stoom. Opent de haarschubben en hydrateert droge krullen tot in de kern.",
+      fr: "Masque végétal ultra-nourrissant activé par micro-vapeur. Pénètre au cœur de la fibre pour une douceur absolue.",
+      en: "Intensive botanical mask activated by micro-steam. Opens the hair cuticle and infuses moisture deep into thirsty curls."
+    },
+    bestFor: {
+      nl: "Droge, dorstige krullen die gevoelig zijn voor pluis.",
+      fr: "Cheveux secs, ternes et sujets aux frisottis.",
+      en: "Dry, brittle curls craving intense hydration and softness."
+    }
+  },
+  {
+    id: "scalp_detox_exfoliation",
+    category: "treatments",
+    price: "€40",
+    duration: { nl: "45 min.", fr: "45 min.", en: "45 min." },
+    title: {
+      nl: "Scalp Detox & Clarifying Spa",
+      fr: "Détox Cuir Chevelu & Spa Clarifiant",
+      en: "Scalp Detox & Clarifying Spa"
+    },
+    desc: {
+      nl: "Zuiverende hoofdhuidscrub met klei en pepermunt. Verwijdert zware productopbouw, talg en schilfers voor gezonde krulgroei.",
+      fr: "Gommage purifiant du cuir chevelu à l'argile et menthe poivrée. Élimine l'accumulation de produits et stimule la pousse.",
+      en: "Purifying scalp scrub with clay and peppermint. Removes stubborn product buildup and excess oils to boost hair growth."
+    },
+    bestFor: {
+      nl: "Jeukende hoofdhuid, build-up van gels/oliën of futloze aanzet.",
+      fr: "Cuir chevelu sensible, accumulation de produits ou manque de volume en racine.",
+      en: "Itchy scalps, heavy product buildup, or flat roots needing a reset."
+    }
+  },
+  {
+    id: "protein_elasticity_boost",
+    category: "treatments",
+    price: "€50",
+    duration: { nl: "60 min.", fr: "60 min.", en: "60 min." },
+    title: {
+      nl: "Protein Repair & Elasticity Boost",
+      fr: "Soin Réparateur Protéiné & Élasticité",
+      en: "Protein Repair & Elasticity Boost"
+    },
+    desc: {
+      nl: "Versterkende proteïnekuur die over-gehydrateerde of slappe krullen herstructureert. Brengt de vocht-proteïnebalans perfect in evenwicht.",
+      fr: "Cure protéinée restructurante pour redonner ressort et tenue aux boucles ramollies ou sur-hydratées.",
+      en: "Fortifying protein treatment that restores structure and snap to limp, over-moisturized, or stretched curls."
+    },
+    bestFor: {
+      nl: "Krullen die hun sprongkracht verloren hebben en snel uitzakken.",
+      fr: "Boucles qui se détendent trop vite et manquent de ressort.",
+      en: "Curls lacking elasticity, bounce, or feeling mushy and limp."
+    }
+  },
+  {
+    id: "bond_builder_therapy",
+    category: "treatments",
+    price: "€55",
+    duration: { nl: "60 min.", fr: "60 min.", en: "60 min." },
+    title: {
+      nl: "Molecular Bond Builder Therapy",
+      fr: "Soin Réparateur Moléculaire",
+      en: "Molecular Bond Builder Therapy"
+    },
+    desc: {
+      nl: "Diepgaande moleculaire herstelbehandeling (Olaplex/K18) die verbroken zwavelbruggen herstelt na kleuring of hittebeschadiging.",
+      fr: "Soin réparateur de ponts disulfures (Olaplex/K18) réparant les dommages causés par la chaleur ou les colorations.",
+      en: "Advanced molecular bond-repair treatment (Olaplex/K18) that reconnects broken hair bonds from heat or chemical damage."
+    },
+    bestFor: {
+      nl: "Geverfde, gebleekte of door stijltangen beschadigde krullen.",
+      fr: "Cheveux colorés, décolorés ou abîmés par les fers à lisser.",
+      en: "Color-treated, bleached, or heat-damaged curls needing structural recovery."
+    }
+  },
+
+  // PACKAGES & MAKEOVERS
+  {
+    id: "ultimate_transformation",
+    category: "styling",
+    price: "€110",
     duration: { nl: "120 min.", fr: "120 min.", en: "120 min." },
     title: {
-      nl: "Brow Lift + Henna Brow + Lash Lift",
-      fr: "Brow Lift + Henné Sourcils + Rehaussement",
-      en: "Brow Lift + Henna Brow + Lash Lift"
+      nl: "The Ultimate Curl Transformation",
+      fr: "Transformation Totale des Boucles",
+      en: "The Ultimate Curl Transformation"
     },
     desc: {
-      nl: "Complete make-over van zowel je wimpers als wenkbrauwen voor een oogverblindende look.",
-      fr: "Mise en beauté totale des cils et des sourcils pour un regard sublimé à 360°.",
-      en: "Complete makeover of both your eyelashes and eyebrows for a stunning overall look."
+      nl: "Ons meest complete VIP-pakket: Uitgebreide krulanalyse + Droog knippen krul voor krul + Stoombehandeling + Stap-voor-stap Styling Workshop.",
+      fr: "Notre expérience VIP ultime: Diagnostic complet + Coupe sur cheveux secs + Soin profond à la vapeur + Atelier coiffage pas-à-pas.",
+      en: "Our signature VIP experience: In-depth curl consultation + Dry curl-by-curl cut + Steam hydration therapy + Step-by-step styling lesson."
     },
     bestFor: {
-      nl: "Een complete, perfect afgestemde oogcontourstyling.",
-      fr: "Une restructuration complète et harmonieuse du regard.",
-      en: "A complete, perfectly matched eye-area styling."
+      nl: "Iedereen die zijn krullen volledig wil transformeren en precies wil leren stylen.",
+      fr: "Une métamorphose totale et l'apprentissage des gestes d'experts à reproduire chez soi.",
+      en: "A complete curl makeover and mastering your home styling routine."
     }
   },
   {
-    id: "pack_2",
-    category: "packs",
-    price: "€90",
-    duration: { nl: "135 min.", fr: "135 min.", en: "135 min." },
-    title: {
-      nl: "Brow Lift + Henna + Lash Lift + Colour",
-      fr: "Brow Lift + Henné + Rehaussement + Teinture",
-      en: "Brow Lift + Henna + Lash Lift + Colour"
-    },
-    desc: {
-      nl: "Het ultieme combipakket inclusief het verven van de wimpers voor maximale intensiteit.",
-      fr: "Le forfait ultime comprenant la teinture des cils pour une intensité maximale.",
-      en: "The ultimate combo package including lash tinting for maximum depth and intensity."
-    },
-    bestFor: {
-      nl: "Een totale transformatie zonder dagelijkse make-up.",
-      fr: "Une transformation totale libérant du maquillage quotidien.",
-      en: "A total transformation freeing you from daily makeup."
-    }
-  },
-  {
-    id: "pack_3",
-    category: "packs",
-    price: "€75",
+    id: "first_time_experience",
+    category: "styling",
+    price: "€95",
     duration: { nl: "105 min.", fr: "105 min.", en: "105 min." },
     title: {
-      nl: "Brow Lift + Lash Lift",
-      fr: "Brow Lift + Rehaussement de Cils",
-      en: "Brow Lift + Lash Lift"
+      nl: "First Time Curly Experience",
+      fr: "Première Expérience Boucles",
+      en: "First Time Curly Experience"
     },
     desc: {
-      nl: "De ideale natuurlijke combinatie: lift je wimpers én wenkbrauwen zonder kleuringen.",
-      fr: "L'association naturelle idéale: rehausse les cils et discipline les sourcils sans coloration.",
-      en: "The ideal natural combination: lifts your lashes and styles your brows without tinting."
+      nl: "Speciaal samengesteld voor wie voor het eerst een krullenspecialist bezoekt: intake, droog knippen, deep conditioning & routine advies.",
+      fr: "Conçu pour votre première visite: diagnostic porositeit/densité, coupe à sec, soin nourrissant et ordonnance de produits sur-mesure.",
+      en: "Tailored for your first visit to a curl specialist: porosity check, custom dry cut, deep conditioning, and personalized product routine."
     },
     bestFor: {
-      nl: "Een frisse, natuurlijke look.",
-      fr: "Un effet frais, naturel et structuré.",
-      en: "A fresh, natural, and styled look."
+      nl: "Nieuwe klanten die hun natuurlijke krulreis starten.",
+      fr: "Nouvelles clientes débutant leur transition vers le naturel.",
+      en: "First-time clients starting their natural curl journey."
     }
   },
   {
-    id: "pack_4",
-    category: "packs",
-    price: "€95",
+    id: "scalp_cut_combo",
+    category: "styling",
+    price: "€120",
     duration: { nl: "135 min.", fr: "135 min.", en: "135 min." },
     title: {
-      nl: "Henna Brow + Light Volume",
-      fr: "Henné Sourcils + Volume Léger",
-      en: "Henna Brow + Light Volume"
+      nl: "Scalp Detox + Moisture Therapy + Cut",
+      fr: "Détox Cuir Chevelu + Soin Vapeur + Coupe",
+      en: "Scalp Detox + Moisture Therapy + Cut"
     },
     desc: {
-      nl: "Mooie, strakke henna wenkbrauwen gecombineerd met een frisse, lichte set wimperextensions.",
-      fr: "Des sourcils structurés au henné associés à une pose de cils Volume Léger.",
-      en: "Crisp henna-styled eyebrows combined with a fresh, light set of eyelash extensions."
+      nl: "De complete wellnessbehandeling: diepe hoofdhuid scrub, hydraterend stoommasker, droge krulsnit en volumineuze diffuser-styling.",
+      fr: "L'expérience bien-être absolue: gommage détoxifiant, soin hydratant à la vapeur, coupe sur cheveux secs et séchage haute définition.",
+      en: "The ultimate wellness package: clarifying scalp treatment, steam hydration mask, precision dry cut, and defined volume styling."
     },
     bestFor: {
-      nl: "Een harmonieuze mascara-look met perfecte wenkbrauwen.",
-      fr: "Un effet maquillé naturel pour les cils et sourcils.",
-      en: "A harmonious mascara-effect with perfect eyebrows."
-    }
-  },
-  {
-    id: "pack_5",
-    category: "packs",
-    price: "€105",
-    duration: { nl: "150 min.", fr: "150 min.", en: "150 min." },
-    title: {
-      nl: "Henna Brow + Medium Volume",
-      fr: "Henné Sourcils + Volume Moyen",
-      en: "Henna Brow + Medium Volume"
-    },
-    desc: {
-      nl: "Prachtig gedefinieerd wimpervolume gecombineerd met perfect gevormde henna wenkbrauwen.",
-      fr: "Un volume de cils moyen et élégant combiné à des sourcils nets au henné.",
-      en: "Elegantly defined medium lash volume paired with perfectly shaped henna brows."
-    },
-    bestFor: {
-      nl: "Een prachtig uitgebalanceerde glam-look.",
-      fr: "Un look glamour parfaitement dessiné.",
-      en: "A beautifully balanced glam appearance."
-    }
-  },
-  {
-    id: "pack_6",
-    category: "packs",
-    price: "€115",
-    duration: { nl: "165 min.", fr: "165 min.", en: "165 min." },
-    title: {
-      nl: "Henna Brow + Mega Volume",
-      fr: "Henné Sourcils + Méga Volume",
-      en: "Henna Brow + Mega Volume"
-    },
-    desc: {
-      nl: "Onze meest intense combinatie voor de ultieme Hollywood oogopslag.",
-      fr: "Notre forfait le plus intense pour un regard digne d'Hollywood.",
-      en: "Our most intense combination for the ultimate Hollywood gaze."
-    },
-    bestFor: {
-      nl: "Cliënten die gaan voor maximale glamour en dichtheid.",
-      fr: "Les adeptes du glamour absolu et du volume maximal.",
-      en: "Clients going for maximum drama, density, and glamour."
+      nl: "Een complete reset van hoofdhuid tot puntjes.",
+      fr: "Une réinitialisation totale du cuir chevelu aux pointes.",
+      en: "A total reset for both scalp health and curl definition."
     }
   }
 ];
@@ -727,232 +752,208 @@ const servicesData = [
 const galleryData = [
   {
     id: 1,
-    image: "assets/lash_lift.png",
-    category: "lift",
-    title: { nl: "Lash Lift & Tint", fr: "Rehaussement & Teinture", en: "Lash Lift & Tint" },
+    image: "assets/curly_cut.png",
+    category: "cuts",
+    title: { nl: "Droog Knippen per Krul", fr: "Coupe sur Cheveux Secs", en: "Precision Dry Curl Sculpting" },
     desc: {
-      nl: "Een prachtige natuurlijke krul die de eigen wimpers optisch verlengt, gecombineerd met diepzwarte verf.",
-      fr: "Une courbure naturelle qui allonge les cils, combinée à une teinture noire intense.",
-      en: "A beautiful natural curl that optically lengthens own lashes, combined with deep black tint."
+      nl: "Droge kniptechniek waarbij elke krul individueel in model wordt gebracht voor optimale veerkracht en volume.",
+      fr: "Technique de coupe à sec sculptant chaque boucle individuellement pour un volume harmonieux.",
+      en: "Dry sculpting technique shaping each curl individually for optimal bounce and balanced volume."
     }
   },
   {
     id: 2,
-    image: "assets/brow_lift.png",
-    category: "brows",
-    title: { nl: "Premium Brow Lamination", fr: "Lamination Sourcils Premium", en: "Premium Brow Lamination" },
+    image: "assets/curly_treatment.png",
+    category: "treatments",
+    title: { nl: "Diepe Stoom Hydratatie Spa", fr: "Spa Hydratant Vapeur", en: "Deep Steam Hydration Therapy" },
     desc: {
-      nl: "Nauwkeurige laminatie voor een vollere, gestroomlijnde vorm die stugge wenkbrauwharen temt.",
-      fr: "Lamination précise pour un effet structuré et dense disciplinant les poils rebelles.",
-      en: "Meticulous lamination for a fuller, streamlined shape that tames stubborn brow hairs."
+      nl: "Luxe hoofdhuid- en haarwassing met een botanisch voedend masker onder zachte micro-stoom.",
+      fr: "Rituel de lavage bien-être avec masque botanique sous micro-vapeur bienfaisante.",
+      en: "Luxury scalp and hair ritual infused with botanical masks under gentle micro-steam."
     }
   },
   {
     id: 3,
-    image: "assets/volume_lashes.png",
-    category: "lashes",
-    title: { nl: "Mega Volume Set", fr: "Pose Méga Volume", en: "Mega Volume Set" },
+    image: "assets/curly_styling.png",
+    category: "styling",
+    title: { nl: "Diffuser & Kruldefinitie", fr: "Définition & Séchage Diffuseur", en: "Diffuser Definition & Volume" },
     desc: {
-      nl: "Ultieme dichtheid en glamour met handgemaakte wimperwaaiers voor een intense oogopslag.",
-      fr: "Densité ultime avec bouquets faits main pour un effet spectaculaire et sophistiqué.",
-      en: "Ultimate density and glamour featuring handmade lash fans for a dramatic gaze."
+      nl: "Prachtig gedefinieerde, pluisvrije spiraalkrullen met natuurlijke glans en langdurige hold.",
+      fr: "Boucles rebondies et sans frisottis avec une brillance remarquable et une tenue souple.",
+      en: "Glossy, frizz-free defined ringlets with natural shine and touchable, flexible hold."
     }
   },
   {
     id: 4,
-    image: "assets/afro_lashes.png",
-    category: "lashes",
-    title: { nl: "Medium Volume Extensions", fr: "Extensions Volume Moyen", en: "Medium Volume Extensions" },
+    image: "assets/curly_afro.png",
+    category: "coils",
+    title: { nl: "Afro & Coily Hair Specialisme", fr: "Expertise Boucles Crépues & Coils", en: "Afro & Coily Texture Care" },
     desc: {
-      nl: "Elegante en opvallende wimperextensions op maat, geplaatst op een prachtige donkere huidskleur.",
-      fr: "Extensions de cils élégantes posées sur mesure sur une magnifique peau foncée.",
-      en: "Elegant and noticeable custom lash extensions applied on beautiful dark skin."
+      nl: "Intense hydratatie en zachte definitie voor 3C-4C texturen met behoud van haarlengte en elasticiteit.",
+      fr: "Hydratation intense et définition délicate pour textures 3C à 4C respectant la longueur.",
+      en: "Deep moisture and defined coil clumping for 3C-4C textures, maximizing elasticity and health."
     }
   },
   {
     id: 5,
-    image: "assets/lash_lift.png",
-    category: "before-after",
-    title: { nl: "Voor & Na Lash Lift", fr: "Avant & Après Rehaussement", en: "Before & After Lash Lift" },
+    image: "assets/hero_bg.png",
+    category: "styling",
+    title: { nl: "Volumineuze Krultransformatie", fr: "Transformation Volume & Éclat", en: "Voluminous Curl Makeover" },
     desc: {
-      nl: "Direct resultaat van een lash lift: wimpers lijken twee keer zo lang zonder extensions.",
-      fr: "Résultat instantané d'un lash lift: les cils semblent deux fois plus longs sans extensions.",
-      en: "Instant results of a lash lift: eyelashes appear twice as long without extensions."
-    }
-  },
-  {
-    id: 6,
-    image: "assets/brow_lift.png",
-    category: "before-after",
-    title: { nl: "Voor & Na Henna Brows", fr: "Avant & Après Henné Sourcils", en: "Before & After Henna Brows" },
-    desc: {
-      nl: "Perfect gestileerde wenkbrauwlijnen met henna die tot 2 weken op de huid blijft zitten.",
-      fr: "Tracé de sourcils net avec coloration au henné tenant jusqu'à 2 semaines sur la peau.",
-      en: "Perfectly styled eyebrow shapes with henna stain lasting up to 2 weeks on the skin."
+      nl: "Van futloos en droog naar een volle, glamoureuze krulcoupe vol beweging en zelfvertrouwen.",
+      fr: "Des boucles ternes transformées en une chevelure volumineuse et pleine de dynamisme.",
+      en: "From dry and flat to a voluminous, healthy curl crown full of bounce and movement."
     }
   }
 ];
 
-// 4. Lash Quiz Data & Recommendations
+// 4. Curl Quiz Data & Recommendations
 const quizData = {
-  natural: {
-    title: { nl: "Natural & Clean", fr: "Naturel & Pur", en: "Natural & Clean" },
+  wavy: {
+    title: { nl: "Wavy Hair (Type 2A - 2C)", fr: "Cheveux Ondulés (2A - 2C)", en: "Wavy Hair (Type 2A - 2C)" },
     desc: {
-      nl: "Jij houdt van een frisse, onderhoudsarme routine. Je wilt eruitzien alsof je wakker bent geworden met perfecte mascara, zonder gedoe.",
-      fr: "Vous aimez une routine simple et fraîche. Vous voulez avoir l'air maquillée dès le réveil, sans effort.",
-      en: "You love a fresh, low-maintenance routine. You want to look like you woke up with perfect mascara, without the effort."
+      nl: "Jouw haar heeft een zachte S-vorm die snel uitzakt of verzwaart door te zware crèmes. Je hebt behoefte aan lichte hydratatie en technieken die volume en textuur stimuleren.",
+      fr: "Vos cheveux forment de belles ondulations en S qui peuvent facilement s'alourdir avec des soins trop riches. Vous avez besoin de légèreté et de volume.",
+      en: "Your hair has soft S-waves that can easily get weighed down by heavy butters. You need lightweight hydration and styling to boost bounce and volume."
     },
-    recService: "lash_lift_colour", // refers to service ID
-    img: "assets/lash_lift.png"
+    recService: "wash_curl_style",
+    img: "assets/curly_styling.png"
   },
-  glam: {
-    title: { nl: "Soft Glam", fr: "Soft Glam", en: "Soft Glam" },
+  curly: {
+    title: { nl: "Classic Curly (Type 3A - 3B)", fr: "Boucles Classiques (3A - 3B)", en: "Classic Curly (Type 3A - 3B)" },
     desc: {
-      nl: "Je houdt van een elegante, verzorgde look voor elke dag. Iets meer volume dan je natuurlijke wimpers, met een zachte en pluizige afwerking.",
-      fr: "Vous préférez une allure élégante et soignée pour tous les jours. Un peu plus de volume que vos cils naturels, avec un fini doux.",
-      en: "You prefer an elegant, polished look for every day. Slightly more volume than your natural lashes, with a soft and fluffy finish."
+      nl: "Mooie gedefinieerde spiralen en ringlets die gevoelig zijn voor pluis en droogte. Een gespecialiseerde droge krulsnit brengt de ideale ronde vorm en veerkracht terug.",
+      fr: "De superbes spirales et anglaises qui ont tendance aux frisottis. Une coupe sur cheveux secs apporte une forme harmonieuse et un rebond maximal.",
+      en: "Defined spirals and ringlets prone to frizz and dryness. A dedicated dry curl cut restores shape, movement, and springiness."
     },
-    recService: "light_volume",
-    img: "assets/afro_lashes.png"
+    recService: "signature_curl_cut",
+    img: "assets/curly_cut.png"
   },
-  volume: {
-    title: { nl: "Full Volume", fr: "Volume Intense", en: "Full Volume" },
+  coily: {
+    title: { nl: "Tight Curls & Corkscrews (3C - 4A)", fr: "Boucles Serrées (3C - 4A)", en: "Tight Curls & Corkscrews (3C - 4A)" },
     desc: {
-      nl: "Jij gaat voor definitie en diepte. Je ogen mogen spreken en opvallen. Perfect voor een sprekende blik en liefhebbers van volle make-up.",
-      fr: "Vous recherchez de la définition et de la profondeur. Vos yeux doivent captiver. Idéal pour un regard prononcé.",
-      en: "You go for definition and depth. Your eyes should pop. Perfect for a striking gaze and makeup lovers."
+      nl: "Zeer dichte, compacte kurkentrekkers met veel krimp (shrinkage). Vraagt om diepe hydratatie onder stoom en gespecialiseerde kniptechnieken per krulstreng.",
+      fr: "Des boucles compactes en tire-bouchon avec un fort rétrécissement. Elles réclament une hydratation profonde et une coupe méticuleuse.",
+      en: "Dense, compact corkscrews with noticeable shrinkage. Requires intense steam hydration and meticulous curl-by-curl sculpting."
     },
-    recService: "medium_volume",
-    img: "assets/volume_lashes.png"
+    recService: "first_time_experience",
+    img: "assets/curly_afro.png"
   },
-  mega: {
-    title: { nl: "Mega Glam", fr: "Méga Glam", en: "Mega Glam" },
+  kinky: {
+    title: { nl: "Afro & Kinky Coils (Type 4B - 4C)", fr: "Cheveux Crépus & Coils (4B - 4C)", en: "Afro & Kinky Coils (Type 4B - 4C)" },
     desc: {
-      nl: "Maximale intensiteit en drama. Jij houdt van een Hollywood-opslag met maximale dichtheid en een donkere, volle wimperlijn.",
-      fr: "Intensité maximale. Vous adorez les regards hollywoodiens avec une densité maximale et une ligne de cils très fournie.",
-      en: "Maximum intensity and drama. You love a Hollywood look with maximum density and a dark, full lash line."
+      nl: "Fijne z-patronen en rijke afro-textuur die de hoogste dosis voeding, zachtheid en bescherming nodig hebben. We hydrateren diep en creëren een prachtige vorm.",
+      fr: "Texture afro dense et motifs en Z nécessitant un maximum de douceur, d'hydratation et de respect du cuir chevelu.",
+      en: "Dense Z-patterns and rich afro texture requiring maximum moisture retention, scalp care, and gentle length retention."
     },
-    recService: "mega_volume",
-    img: "assets/hero_bg.png"
+    recService: "ultimate_transformation",
+    img: "assets/curly_afro.png"
   },
-  lift: {
-    title: { nl: "Lash Lift Only", fr: "Rehaussement Seul", en: "Lash Lift Only" },
+  repair: {
+    title: { nl: "Herstel & Transitie", fr: "Transition & Réparation", en: "Repair & Transition" },
     desc: {
-      nl: "Je wilt absoluut geen extensions, maar wel je eigen natuurlijke wimpers maximaal omhoog krullen voor een wakkere, sprekende blik.",
-      fr: "Vous ne souhaitez pas d'extensions, mais vous voulez recourber vos cils naturels au maximum pour ouvrir votre regard.",
-      en: "You don't want extensions, but you want to lift and curl your own natural lashes to the maximum for a refreshed gaze."
+      nl: "Herstel van door stijltangen, chemische behandelingen of kleuringen beschadigde krullen. Wij herstellen je natuurlijke krulpatroon stap voor stap.",
+      fr: "Réparation des cheveux abîmés par les lisseurs, défrisages ou décolorations. Nous réveillons vos boucles naturelles pas à pas.",
+      en: "Restoring heat-damaged, chemically treated, or bleached curls back to their vibrant, healthy natural pattern."
     },
-    recService: "lash_lift",
-    img: "assets/lash_lift.png"
+    recService: "protein_elasticity_boost",
+    img: "assets/curly_treatment.png"
   }
 };
 
-// 5. FAQ Data
+// 5. FAQ Data for Curly Hair Specialist
 const faqData = [
   {
     q: {
-      nl: "Hoe lang blijven wimperextensions zitten?",
-      fr: "Combien de temps durent les extensions de cils ?",
-      en: "How long do eyelash extensions last?"
+      nl: "Hoe moet ik mijn haar voorbereiden voor een krulsessie?",
+      fr: "Comment préparer mes cheveux avant mon rendez-vous ?",
+      en: "How should I prepare my hair for my curl appointment?"
     },
     a: {
-      nl: "Wimperextensions kunnen tot 6 weken blijven zitten, afhankelijk van je natuurlijke wimpergroeicyclus en je nazorg. Om de wimperlijn vol en elegant te houden, raden we aan om elke 2 tot 3 weken een refill-afspraak te boeken.",
-      fr: "Les extensions de cils peuvent durer jusqu'à 6 semaines, selon le cycle naturel de vos cils et l'entretien. Pour garder une frange de cils fournie, nous recommandons un remplissage toutes les 2 à 3 semaines.",
-      en: "Eyelash extensions can last up to 6 weeks, depending on your natural lash growth cycle and aftercare. To keep the lash line full and elegant, we recommend booking a refill appointment every 2 to 3 weeks."
+      nl: "Kom altijd naar de salon met 100% droog haar in zijn natuurlijke krulpatroon (gewassen 1-2 dagen voordien met minimale stylingproducten). Draag je haar los: géén staarten, knotten, vlechten, speldjes of klemmen, omdat deze het natuurlijke krulpatroon vervormen.",
+      fr: "Venez impérativement avec les cheveux 100% secs dans leur état naturel (lavés 1 à 2 jours avant avec un minimum de produits). Laissez vos cheveux totalement lâchés: aucun chignon, élastique, pince ou tresse qui altérerait la forme naturelle des boucles.",
+      en: "Please arrive with 100% dry hair styled in its natural curl state (washed 1-2 days prior with minimal stylers). Wear your hair completely down: no ponytails, buns, braids, clips, or hats, as these alter your natural curl pattern."
     }
   },
   {
     q: {
-      nl: "Wanneer moet ik een refill (bijvulling) boeken?",
-      fr: "Quand dois-je réserver un remplissage ?",
-      en: "When should I book a refill?"
+      nl: "Waarom knipt Curlyila op droog haar in plaats van nat haar?",
+      fr: "Pourquoi Curlyila coupe-t-elle sur cheveux secs plutôt que mouillés ?",
+      en: "Why does Curlyila cut curls dry instead of wet?"
     },
     a: {
-      nl: "We raden aan om een refill te boeken tussen de 2 en 3 weken na je behandeling. Er moet nog minstens 40% van de wimperextensions aanwezig zijn voor een bijvulling. Na 4 weken wordt een nieuwe set berekend.",
-      fr: "Nous conseillons de réserver un remplissage sous 2 à 3 semaines. Il doit rester au moins 40% des extensions de cils pour effectuer le soin. Au-delà de 4 semaines, une pose complète sera facturée.",
-      en: "We recommend booking a refill between 2 and 3 weeks after your treatment. You must have at least 40% of the extensions remaining to qualify for a refill. Beyond 4 weeks, a full set is charged."
+      nl: "Wanneer krullen nat zijn, rekt het haar uit en verdwijnt het unieke springpatroon. Omdat elke krul op je hoofd een ander krimpingspercentage (shrinkage) heeft, zorgt nat knippen voor ongelijke happen zodra het opdroogt. Droog knippen garandeert dat de vorm perfect klopt in het dagelijks leven.",
+      fr: "Mouillés, les cheveux s'étirent et perdent leur ressort naturel. Comme chaque boucle a un taux de rétrécissement (shrinkage) différent, couper mouillé crée des irrégularités une fois sec. La coupe sur cheveux secs garantit une harmonie visuelle parfaite.",
+      en: "When wet, curly hair stretches out and masks its true elasticity. Because each curl cluster has a different shrinkage rate, wet cutting often leads to uneven shapes when dry. Dry cutting ensures your shape looks flawless in real life."
     }
   },
   {
     q: {
-      nl: "Wat is het verschil tussen Light, Medium en Mega Volume?",
-      fr: "Quelle est la différence entre le Volume Léger, Moyen et Méga ?",
-      en: "What is the difference between Light, Medium, and Mega Volume?"
+      nl: "Welke producten gebruikt Curlyila in de salon?",
+      fr: "Quels produits sont utilisés au salon Curlyila ?",
+      en: "What products does Curlyila use in the salon?"
     },
     a: {
-      nl: "Het verschil zit in de dikte en het aantal wimperhaartjes per natuurlijke wimper. Light Volume creëert een subtiele mascara look (2-3 wimpers per waaier). Medium Volume biedt meer diepte en dichtheid (4-6 wimpers per waaier). Mega Volume geeft een extreem volle en glamoureuze look (7+ wimpers per waaier).",
-      fr: "La différence réside dans l'épaisseur et le nombre d'extensions appliquées par cil naturel. Le Volume Léger crée un effet mascara subtil (2-3 cils par bouquet). Le Volume Moyen offre plus de densité (4-6 cils par bouquet). Le Méga Volume offre un look ultra-fourni et glamour (7+ cils par bouquet).",
-      en: "The difference lies in the thickness and number of lash extensions applied per natural lash. Light Volume creates a subtle mascara effect (2-3 lashes per fan). Medium Volume offers more depth and density (4-6 lashes per fan). Mega Volume gives an extremely full and glamorous look (7+ lashes per fan)."
+      nl: "Wij werken uitsluitend met hoogwaardige, Curly Girl-vriendelijke en professionele salonproducten. Onze formules zijn 100% vrij van uitdrogende sulfaten, zware niet-wateroplosbare siliconen, parabenen en minerale oliën.",
+      fr: "Nous utilisons exclusivement des soins professionnels haut de gamme compatibles Curly Girl. Nos formules sont sans sulfates desséchants, sans silicones occlusifs et enrichies en extraits botaniques nourrissants.",
+      en: "We exclusively use premium, professional-grade, curl-friendly formulas. All our products are free of drying sulphates, heavy non-water-soluble silicones, parabens, and mineral oils."
     }
   },
   {
     q: {
-      nl: "Is een lash lift beter voor mij dan wimperextensions?",
-      fr: "Le rehaussement de cils est-il préférable aux extensions ?",
-      en: "Is a lash lift better for me than eyelash extensions?"
+      nl: "Hoe vaak moet ik mijn krullen laten knippen?",
+      fr: "À quelle fréquence dois-je couper mes boucles ?",
+      en: "How often should I get my curls cut?"
     },
     a: {
-      nl: "Als je de voorkeur geeft aan een onderhoudsarme routine en je eigen wimpers wilt accentueren, is een Lash Lift perfect. Het lift je natuurlijke wimpers tot 6 weken zonder dat je extensions hoeft te dragen. Wimperextensions zijn ideaal als je extra lengte, volume en een opvallendere look wenst.",
-      fr: "Si vous préférez une routine simple et souhaitez sublimer vos propres cils, le Rehaussement (Lash Lift) est parfait. Il recourbe vos cils naturels jusqu'à 6 semaines. Les extensions de cils sont idéales si vous recherchez de la longueur, du volume et un résultat plus prononcé.",
-      en: "If you prefer a low-maintenance routine and want to enhance your own lashes, a Lash Lift is perfect. It lifts your natural lashes for up to 6 weeks. Extensions are ideal if you desire extra length, volume, and a more pronounced look."
+      nl: "Voor het behoud van een mooie vorm en gezonde punten raden we aan om elke 3 tot 4 maanden een 'Curly Cut Refresh' te boeken. Als je je haar wilt laten groeien, is 2 tot 3 keer per jaar voldoende.",
+      fr: "Pour conserver une coupe équilibrée et éviter les nœuds et fourches, nous conseillons un rafraîchissement tous les 3 à 4 mois. Si vous laissez pousser, 2 à 3 fois par an suffisent.",
+      en: "To maintain optimal shape, prevent split ends, and keep volume balanced, we recommend a refresh cut every 3 to 4 months. If growing your hair out, 2 to 3 times a year is ideal."
     }
   },
   {
     q: {
-      nl: "Moet ik een voorschot betalen?",
-      fr: "Dois-je payer un acompte ?",
-      en: "Do I need to pay a deposit?"
+      nl: "Moet ik een voorschot betalen bij het boeken?",
+      fr: "Dois-je verser un acompte lors de la réservation ?",
+      en: "Do I need to pay a deposit when booking?"
     },
     a: {
-      nl: "Ja. Om je afspraak te bevestigen, vragen we een niet-restitueerbaar voorschot van €15. Dit bedrag wordt in mindering gebracht op het totaalbedrag tijdens je afspraak. Je kunt je afspraak tot 48 uur van tevoren verplaatsen met behoud van je voorschot.",
-      fr: "Oui. Pour confirmer votre rendez-vous, nous demandons un acompte non remboursable de 15 €. Ce montant est déduit du total le jour du rendez-vous. Vous pouvez déplacer votre séance jusqu'à 48 heures à l'avance sans perdre votre acompte.",
-      en: "Yes. To secure your appointment, we require a non-refundable deposit of €15. This amount is deducted from the total price of your treatment. You can reschedule your appointment up to 48 hours in advance without losing your deposit."
+      nl: "Ja. Om je exclusieve tijdslot te garanderen, vragen we een niet-restitueerbaar voorschot van €15. Dit bedrag wordt verrekend met het totaalbedrag tijdens je afspraak. Je kunt je afspraak tot 48 uur van tevoren kosteloos verplaatsen.",
+      fr: "Oui. Pour sécuriser votre créneau dans l'agenda, un acompte non remboursable de 15 € est demandé. Il sera déduit du montant total le jour du rendez-vous. Vous pouvez déplacer votre séance jusqu'à 48h à l'avance.",
+      en: "Yes. To reserve your dedicated time slot, we require a non-refundable deposit of €15. This is deducted from your final total. You can reschedule your appointment up to 48 hours in advance."
     }
   },
   {
     q: {
-      nl: "Kan ik make-up dragen na de behandeling?",
-      fr: "Puis-je me maquiller après le soin ?",
-      en: "Can I wear makeup after treatment?"
+      nl: "Is Curlyila geschikt voor alle krultypes en etniciteiten?",
+      fr: "Curlyila convient-elle à tous les types de boucles et origines ?",
+      en: "Is Curlyila suitable for all curl types and ethnicities?"
     },
     a: {
-      nl: "We raden het gebruik van mascara of eyeliner op wimperextensions sterk af, vooral producten op oliebasis. Voor een Lash Lift of Brow Lift raden we aan om de eerste 24 uur na de behandeling helemaal geen oogmake-up te dragen.",
-      fr: "Nous déconseillons fortement le mascara ou l'eyeliner sur vos extensions, en particulier les produits huileux. Pour un Rehaussement ou Brow Lift, il est conseillé de ne porter aucun maquillage des yeux durant les premières 24 heures.",
-      en: "We highly discourage wearing mascara or eyeliner on extensions, especially oil-based products. For a Lash Lift or Brow Lift, it is recommended to wear no eye makeup at all for the first 24 hours."
-    }
-  },
-  {
-    q: {
-      nl: "Hoe bereid ik me voor op mijn afspraak?",
-      fr: "Comment préparer mon rendez-vous ?",
-      en: "How do I prepare for my appointment?"
-    },
-    a: {
-      nl: "Kom alsjeblieft naar je afspraak met een volledig schoon gezicht, vrij van oogmake-up, mascara en crèmes. Draag geen lenzen tijdens de behandeling (neem eventueel je brillendoosje mee). Vermijd cafeïne vlak voor de afspraak, zodat je ogen ontspannen blijven.",
-      fr: "Veuillez vous présenter au rendez-vous avec le visage propre, sans maquillage, mascara ou crème. Retirez vos lentilles de contact. Évitez le café juste avant la séance pour garder les yeux détendus.",
-      en: "Please arrive at your appointment with a clean face, completely free of eye makeup, mascara, and creams. Do not wear contact lenses during the treatment. Avoid caffeine just before your session to keep your eyes completely relaxed."
+      nl: "Absoluut! Curlyila is gespecialiseerd in het volledige spectrum van golvend (2A), krullend (3A-3C) tot afro en kinky coily haar (4A-4C). Iedere textuur krijgt een afgestemde behandeling op basis van porositeit, densiteit en elasticiteit.",
+      fr: "Absolument ! Curlyila maîtrise l'ensemble du spectre, des ondulations douces (2A) aux boucles serrées et cheveux afros crépus (4A-4C). Chaque chevelure reçoit un soin personnalisé.",
+      en: "Absolutely! Curlyila is trained and experienced with the entire texture spectrum from loose waves (2A-2C) to classic curls (3A-3C) and dense afro coils (4A-4C)."
     }
   },
   {
     q: {
       nl: "Waar is de salon gevestigd?",
-      fr: "Où se situe le salon ?",
-      en: "Where are you located?"
+      fr: "Où se situe le salon de coiffure ?",
+      en: "Where is the studio located?"
     },
     a: {
-      nl: "JC Beauty is gevestigd in het centrum van Mechelen, België. Het exacte adres van de salon en parkeerinstructies worden automatisch met je gedeeld in je afspraakbevestiging via e-mail en sms.",
-      fr: "Le salon JC Beauty est situé dans le centre de Malines (Mechelen), en Belgique. L'adresse exacte et les instructions de stationnement vous seront automatiquement envoyées dans votre e-mail de confirmation.",
-      en: "JC Beauty is located in the center of Mechelen, Belgium. The exact salon address and parking details are automatically sent to you in your email and SMS booking confirmation."
+      nl: "Curlyila is gevestigd in het centrum van Mechelen, België. Het exacte adres van de salon en parkeerinstructies worden automatisch met je gedeeld in je afspraakbevestiging via e-mail en sms.",
+      fr: "Le salon Curlyila est situé dans le centre de Malines (Mechelen), en Belgique. L'adresse exacte et les informations de parking vous sont envoyées dans votre e-mail de confirmation.",
+      en: "Curlyila is located in central Mechelen, Belgium. The exact address and parking details are automatically provided in your booking confirmation email and SMS."
     }
   }
 ];
 
 // 6. Application State
-let currentLanguage = localStorage.getItem("jc_beauty_lang") || "nl";
+let currentLanguage = localStorage.getItem("curlyila_lang") || "nl";
 let activePage = "home";
-let currentReviewIndex = 0;
-let currentQuizStyle = "natural";
-let activeServicesCategory = "lashes";
+let currentQuizStyle = "wavy";
+let activeServicesCategory = "cuts";
 let activeGalleryFilter = "all";
 
 // DOM Elements
@@ -982,11 +983,7 @@ const elements = {
   lightboxDesc: document.getElementById("lightbox-desc"),
   lightboxCloseBtn: document.getElementById("lightbox-close-btn"),
   
-  faqContainer: document.getElementById("faq-accordion-container"),
-  
-  reviewsCarousel: document.getElementById("reviews-carousel"),
-  prevReviewBtn: document.getElementById("prev-review-btn"),
-  nextReviewBtn: document.getElementById("next-review-btn")
+  faqContainer: document.getElementById("faq-accordion-container")
 };
 
 // 7. Initialization
@@ -1003,8 +1000,10 @@ document.addEventListener("DOMContentLoaded", () => {
 // 8. Translation Logic
 function setLanguage(lang) {
   currentLanguage = lang;
-  localStorage.setItem("jc_beauty_lang", lang);
-  elements.currentLangText.textContent = lang.toUpperCase();
+  localStorage.setItem("curlyila_lang", lang);
+  if (elements.currentLangText) {
+    elements.currentLangText.textContent = lang.toUpperCase();
+  }
   document.documentElement.setAttribute("lang", lang);
   
   // Highlight active lang btn
@@ -1032,7 +1031,7 @@ function setLanguage(lang) {
     }
   });
 
-  // Re-render components that rely on state language
+  // Re-render dynamic components
   updateQuizResult();
   displayServices();
   displayGallery();
@@ -1040,10 +1039,12 @@ function setLanguage(lang) {
 }
 
 // Language Dropdown toggles
-elements.langToggleBtn.addEventListener("click", (e) => {
-  e.stopPropagation();
-  elements.langDropdownMenu.classList.toggle("show");
-});
+if (elements.langToggleBtn) {
+  elements.langToggleBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    elements.langDropdownMenu.classList.toggle("show");
+  });
+}
 
 elements.langSelectBtns.forEach(btn => {
   btn.addEventListener("click", (e) => {
@@ -1054,7 +1055,9 @@ elements.langSelectBtns.forEach(btn => {
 });
 
 document.addEventListener("click", () => {
-  elements.langDropdownMenu.classList.remove("show");
+  if (elements.langDropdownMenu) {
+    elements.langDropdownMenu.classList.remove("show");
+  }
 });
 
 // 9. Client-Side Router
@@ -1072,12 +1075,12 @@ function initRouter() {
       e.preventDefault();
       const page = link.getAttribute("href").replace("#", "");
       window.location.hash = page;
-      elements.mainNav.classList.remove("active");
-      elements.mobileMenuToggle.classList.remove("active");
+      if (elements.mainNav) elements.mainNav.classList.remove("active");
+      if (elements.mobileMenuToggle) elements.mobileMenuToggle.classList.remove("active");
     });
   });
 
-  // Navigate on clicking other buttons/triggers
+  // Navigate on clicking other triggers (category cards, buttons, etc.)
   document.addEventListener("click", (e) => {
     const trigger = e.target.closest(".nav-link-trigger");
     if (trigger) {
@@ -1102,17 +1105,18 @@ function initRouter() {
   });
 
   // Handle logo click
-  elements.logoLink.addEventListener("click", (e) => {
-    e.preventDefault();
-    window.location.hash = "home";
-  });
+  if (elements.logoLink) {
+    elements.logoLink.addEventListener("click", (e) => {
+      e.preventDefault();
+      window.location.hash = "home";
+    });
+  }
 
   // Run initial hash routing
   handleHashChange();
 }
 
 function switchPage(pageId) {
-  // Check if target page exists, else default to home
   const targetPageElement = document.getElementById(`page-${pageId}`);
   if (!targetPageElement) {
     pageId = "home";
@@ -1120,7 +1124,7 @@ function switchPage(pageId) {
 
   activePage = pageId;
 
-  // Toggle active class on all pages
+  // Toggle active class on all page containers
   document.querySelectorAll(".page-section").forEach(section => {
     if (section.id === `page-${pageId}`) {
       section.classList.add("active");
@@ -1143,15 +1147,17 @@ function switchPage(pageId) {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
-// 10. Mobile Menu drawer
+// 10. Mobile Menu Drawer
 function initMobileMenu() {
-  elements.mobileMenuToggle.addEventListener("click", (e) => {
-    elements.mobileMenuToggle.classList.toggle("active");
-    elements.mainNav.classList.toggle("active");
-  });
+  if (elements.mobileMenuToggle && elements.mainNav) {
+    elements.mobileMenuToggle.addEventListener("click", () => {
+      elements.mobileMenuToggle.classList.toggle("active");
+      elements.mainNav.classList.toggle("active");
+    });
+  }
 }
 
-// 11. Lash Style Finder Quiz
+// 11. Curl Quiz / Texture Finder
 function initQuiz() {
   elements.quizSelectCards.forEach(card => {
     card.addEventListener("click", () => {
@@ -1165,47 +1171,48 @@ function initQuiz() {
 }
 
 function updateQuizResult() {
+  if (!elements.quizResultBox) return;
   const result = quizData[currentQuizStyle];
   if (!result) return;
   
-  // Find recommended service details
   const service = servicesData.find(s => s.id === result.recService);
   if (!service) return;
 
-  const titleText = result.title[currentLanguage];
-  const descText = result.desc[currentLanguage];
-  const serviceName = service.title[currentLanguage];
+  const titleText = result.title[currentLanguage] || result.title.nl;
+  const descText = result.desc[currentLanguage] || result.desc.nl;
+  const serviceName = service.title[currentLanguage] || service.title.nl;
   const priceText = service.price;
-  const durationText = service.duration[currentLanguage];
-  const bestForText = service.bestFor[currentLanguage];
-  const durationLabel = translations[currentLanguage].quiz_duration;
-  const priceLabel = translations[currentLanguage].quiz_price;
-  const bestForLabel = translations[currentLanguage].quiz_best_for;
-  const bookText = translations[currentLanguage].quiz_book_rec;
-  const recLabel = translations[currentLanguage].quiz_rec_title;
+  const durationText = service.duration[currentLanguage] || service.duration.nl;
+  const bestForText = service.bestFor[currentLanguage] || service.bestFor.nl;
+  
+  const durationLabel = translations[currentLanguage]?.quiz_duration || "Duur";
+  const priceLabel = translations[currentLanguage]?.quiz_price || "Prijs";
+  const bestForLabel = translations[currentLanguage]?.quiz_best_for || "Ideaal voor";
+  const bookText = translations[currentLanguage]?.quiz_book_rec || "Boek deze behandeling";
+  const recLabel = translations[currentLanguage]?.quiz_rec_title || "Aanbevolen voor jou:";
 
   elements.quizResultBox.innerHTML = `
     <div class="result-text">
-      <h3 style="font-family: var(--font-serif); font-size: 2.2rem; margin-bottom: 1rem; font-style: italic;">${titleText}</h3>
-      <p style="font-size: 1rem; margin-bottom: 2rem; color: var(--accent-silver-dim);">${descText}</p>
+      <h3 style="font-family: var(--font-serif); font-size: 2rem; margin-bottom: 1rem; font-style: italic;">${titleText}</h3>
+      <p style="font-size: 0.95rem; margin-bottom: 1.8rem; color: var(--accent-silver-dim); line-height: 1.6;">${descText}</p>
       
-      <div class="result-rec">
-        <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--accent-silver-dim); display: block; margin-bottom: 0.3rem;">${recLabel}</span>
-        <strong style="font-family: var(--font-serif); font-size: 1.4rem; font-weight: 500; color: #fff;">${serviceName}</strong>
+      <div class="result-rec" style="margin-bottom: 1.2rem;">
+        <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--accent-gold); display: block; margin-bottom: 0.3rem;">${recLabel}</span>
+        <strong style="font-family: var(--font-serif); font-size: 1.35rem; font-weight: 500; color: #fff;">${serviceName}</strong>
       </div>
 
-      <div style="display: flex; gap: 2rem; font-size: 0.8rem; color: var(--accent-silver-dim); margin-bottom: 2rem;">
+      <div style="display: flex; gap: 2rem; font-size: 0.85rem; color: var(--accent-silver-dim); margin-bottom: 1.5rem;">
         <span><strong>${durationLabel}:</strong> ${durationText}</span>
         <span><strong>${priceLabel}:</strong> ${priceText}</span>
       </div>
       
-      <p style="font-style: italic; font-family: var(--font-serif); font-size: 1.05rem; margin-bottom: 2.2rem; color: var(--accent-silver-dim);">
+      <p style="font-style: italic; font-family: var(--font-serif); font-size: 1rem; margin-bottom: 2rem; color: var(--accent-silver-dim);">
         <strong>${bestForLabel}:</strong> ${bestForText}
       </p>
 
-      <a href="https://beautybyjc.setmore.com/" target="_blank" class="btn btn-primary">${bookText}</a>
+      <a href="https://curlyila.setmore.com/" target="_blank" class="btn btn-primary">${bookText}</a>
     </div>
-    <div class="result-image" style="height: 320px; overflow: hidden; border: 1px solid rgba(255,255,255,0.06);">
+    <div class="result-image" style="height: 320px; overflow: hidden; border: 1px solid rgba(255,255,255,0.06); border-radius: 8px;">
       <img src="${result.img}" alt="${titleText}" style="width:100%; height:100%; object-fit:cover;">
     </div>
   `;
@@ -1213,7 +1220,6 @@ function updateQuizResult() {
 
 // 12. Services Grid Rendering
 function initServices() {
-  // Update categories tabs state
   elements.servicesTabBtns.forEach(btn => {
     btn.addEventListener("click", () => {
       elements.servicesTabBtns.forEach(b => b.classList.remove("active"));
@@ -1225,40 +1231,46 @@ function initServices() {
 }
 
 function displayServices() {
+  if (!elements.servicesCardsContainer) return;
   const filtered = servicesData.filter(s => s.category === activeServicesCategory);
-  const bookText = translations[currentLanguage].book_service_btn;
+  const bookText = translations[currentLanguage]?.book_service_btn || "Boek behandeling";
   
   elements.servicesCardsContainer.innerHTML = "";
   
   filtered.forEach(service => {
     const card = document.createElement("div");
     card.className = "service-card";
+    const title = service.title[currentLanguage] || service.title.nl;
+    const desc = service.desc[currentLanguage] || service.desc.nl;
+    const bestFor = service.bestFor[currentLanguage] || service.bestFor.nl;
+    const duration = service.duration[currentLanguage] || service.duration.nl;
+
     card.innerHTML = `
       <div>
         <div class="service-header">
-          <h3 class="service-title">${service.title[currentLanguage]}</h3>
+          <h3 class="service-title">${title}</h3>
           <span class="service-price">${service.price}</span>
         </div>
         <div class="service-info">
-          <p class="service-desc">${service.desc[currentLanguage]}</p>
+          <p class="service-desc">${desc}</p>
           <div class="service-best">
-            <strong>Best for:</strong> ${service.bestFor[currentLanguage]}
+            <strong>Ideaal voor:</strong> ${bestFor}
           </div>
         </div>
       </div>
       <div>
         <div class="service-meta" style="margin-bottom: 1.5rem;">
-          <span><i class="fa-regular fa-clock"></i> ${service.duration[currentLanguage]}</span>
-          <span><i class="fa-solid fa-sparkles"></i> Mechelen</span>
+          <span><i class="fa-regular fa-clock"></i> ${duration}</span>
+          <span><i class="fa-solid fa-scissors"></i> Curlyila Studio</span>
         </div>
-        <a href="https://beautybyjc.setmore.com/" target="_blank" class="btn btn-secondary">${bookText}</a>
+        <a href="https://curlyila.setmore.com/" target="_blank" class="btn btn-secondary">${bookText}</a>
       </div>
     `;
     elements.servicesCardsContainer.appendChild(card);
   });
 }
 
-// 13. Gallery Masonry & Lightbox
+// 13. Gallery & Lightbox
 function initGallery() {
   elements.galleryFilterBtns.forEach(btn => {
     btn.addEventListener("click", () => {
@@ -1269,22 +1281,24 @@ function initGallery() {
     });
   });
   
-  // Close Lightbox
-  elements.lightboxCloseBtn.addEventListener("click", () => {
-    elements.lightbox.classList.remove("show");
-  });
-  
-  elements.lightbox.addEventListener("click", (e) => {
-    if (e.target === elements.lightbox) {
+  if (elements.lightboxCloseBtn && elements.lightbox) {
+    elements.lightboxCloseBtn.addEventListener("click", () => {
       elements.lightbox.classList.remove("show");
-    }
-  });
+    });
+    
+    elements.lightbox.addEventListener("click", (e) => {
+      if (e.target === elements.lightbox) {
+        elements.lightbox.classList.remove("show");
+      }
+    });
+  }
 }
 
 function displayGallery() {
+  if (!elements.galleryContainer) return;
   const filtered = galleryData.filter(item => {
     if (activeGalleryFilter === "all") return true;
-    return item.category === activeGalleryFilter || (activeGalleryFilter === "before-after" && item.category.includes("before-after"));
+    return item.category === activeGalleryFilter;
   });
 
   elements.galleryContainer.innerHTML = "";
@@ -1292,11 +1306,13 @@ function displayGallery() {
   filtered.forEach(item => {
     const el = document.createElement("div");
     el.className = "gallery-item";
+    const title = item.title[currentLanguage] || item.title.nl;
+
     el.innerHTML = `
-      <img src="${item.image}" alt="${item.title[currentLanguage]}" loading="lazy">
+      <img src="${item.image}" alt="${title}" loading="lazy">
       <div class="gallery-hover">
-        <i class="fa-regular fa-eye"></i>
-        <span>${item.title[currentLanguage]}</span>
+        <i class="fa-solid fa-magnifying-glass-plus"></i>
+        <span>${title}</span>
       </div>
     `;
     el.addEventListener("click", () => openLightbox(item));
@@ -1305,27 +1321,24 @@ function displayGallery() {
 }
 
 function openLightbox(item) {
+  if (!elements.lightbox) return;
   elements.lightboxImg.src = item.image;
-  elements.lightboxTitle.textContent = item.title[currentLanguage];
-  elements.lightboxDesc.textContent = item.desc[currentLanguage];
+  elements.lightboxTitle.textContent = item.title[currentLanguage] || item.title.nl;
+  elements.lightboxDesc.textContent = item.desc[currentLanguage] || item.desc.nl;
   elements.lightbox.classList.add("show");
 }
 
-// 14. Reviews Carousel
-function initReviewsSlider() {
-  // Reviews slider deactivated: utilizing honest coming-soon placeholder
-}
-
-// 15. FAQ Accordions
+// 14. FAQ Accordions
 function renderFAQ() {
+  if (!elements.faqContainer) return;
   elements.faqContainer.innerHTML = "";
 
-  faqData.forEach((item, index) => {
+  faqData.forEach(item => {
     const el = document.createElement("div");
     el.className = "faq-item";
     
-    const questionText = item.q[currentLanguage];
-    const answerText = item.a[currentLanguage];
+    const questionText = item.q[currentLanguage] || item.q.nl;
+    const answerText = item.a[currentLanguage] || item.a.nl;
 
     el.innerHTML = `
       <button class="faq-question">
@@ -1343,10 +1356,11 @@ function renderFAQ() {
     button.addEventListener("click", () => {
       const isActive = el.classList.contains("active");
       
-      // Close other FAQs
-      document.querySelectorAll(".faq-item").forEach(item => {
-        item.classList.remove("active");
-        item.querySelector(".faq-answer").style.maxHeight = null;
+      // Close all other FAQs
+      document.querySelectorAll(".faq-item").forEach(other => {
+        other.classList.remove("active");
+        const panel = other.querySelector(".faq-answer");
+        if (panel) panel.style.maxHeight = null;
       });
 
       if (!isActive) {
@@ -1359,9 +1373,10 @@ function renderFAQ() {
   });
 }
 
-// 16. Scrolling Effects (Header background color change)
+// 15. Header Scroll Effect
 function setupScrollEffects() {
   const header = document.querySelector("header");
+  if (!header) return;
   
   window.addEventListener("scroll", () => {
     if (window.scrollY > 50) {
