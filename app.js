@@ -15,16 +15,16 @@ const translations = {
     book_now_btn: "Boek Nu",
     
     // SEO Meta
-    meta_title: "Curlyila | Hairstylist Specializing in Curly Hair | Mechelen",
+    meta_title: "Curlyila | Hairstylist Specializing in Curly Hair | Genk",
     
     // Hero Section
-    hero_title: "Krullenspecialist & Hairstylist in Mechelen",
+    hero_title: "Krullenspecialist & Hairstylist in Genk",
     hero_subtitle: "Ervaar op maat gemaakte droge krulsnitten, diepe hydratatie en ultieme veerkracht voor alle krultypes (2A tot 4C).",
     hero_cta_book: "Boek je krulsessie",
     hero_cta_services: "Bekijk behandelingen",
     badge_curl: "Krullenspecialist & Hairstylist",
     badge_technique: "Droog Knippen per Krul",
-    badge_location: "Gevestigd in Mechelen",
+    badge_location: "Gevestigd in Genk",
 
     // Hero & Intro Section
     hero_title_welcome: "WELCOME TO",
@@ -76,7 +76,7 @@ const translations = {
     trust_p2_title: "100% Krulvriendelijke Formules",
     trust_p2_desc: "Geen agressieve sulfaten, minerale oliën of zware siliconen. Wij werken uitsluitend met hoogwaardige, hydraterende en voedende ingrediënten.",
     trust_p3_title: "Gecertificeerde Kwaliteit",
-    trust_p3_desc: "Persoonlijke aandacht, rust en pure luxe in het hart van Mechelen. Elke behandeling is een ontspannende ervaring met direct zichtbaar resultaat.",
+    trust_p3_desc: "Persoonlijke aandacht, rust en pure luxe in het hart van Genk. Elke behandeling is een ontspannende ervaring met direct zichtbaar resultaat.",
 
     // Reviews Section
     reviews_title: "Wat Klanten Zeggen",
@@ -118,7 +118,7 @@ const translations = {
     cta_box_btn: "Naar de Boekingspagina",
 
     // Footer
-    footer_brand_desc: "Curlyila is een exclusieve krullenspecialist en hairstudio gevestigd in Mechelen, België. Wij zijn gespecialiseerd in droog knippen per krul, intensieve hydratatietherapieën en krultransformaties voor alle texturen (2A tot 4C).",
+    footer_brand_desc: "Curlyila is een exclusieve krullenspecialist en hairstudio gevestigd in Genk, België. Wij zijn gespecialiseerd in droog knippen per krul, intensieve hydratatietherapieën en krultransformaties voor alle texturen (2A tot 4C).",
     footer_links_title: "Navigatie",
     footer_contact_title: "Contact & Locatie",
     footer_map_hint: "(Precieze locatie in bevestigingsmail)",
@@ -155,7 +155,7 @@ const translations = {
     founder_subtitle: "Meet Your Stylist • Ilaria",
     founder_title: "Ciao, Ik ben Ilaria",
     founder_p1: "Geboren in Italië en gepassioneerd door de natuurlijke schoonheid van krullend en getextureerd haar. Jarenlang zag ik hoe traditionele salons krullen behandelden als steil haar — met natte knipbeurten, stijltangen en zware chemicaliën.",
-    founder_p2: "In mijn salon in Mechelen combineer ik Italiaans vakmanschap met geavanceerde droogkniptechnieken en intensieve stoomverzorging. Mijn missie is simpel: jou laten zien hoe adembenemend, veerkrachtig en moeiteloos jouw eigen natuurlijke krullen kunnen zijn.",
+    founder_p2: "In mijn salon in Genk combineer ik Italiaans vakmanschap met geavanceerde droogkniptechnieken en intensieve stoomverzorging. Mijn missie is simpel: jou laten zien hoe adembenemend, veerkrachtig en moeiteloos jouw eigen natuurlijke krullen kunnen zijn.",
 
     // Consultation Banner
     consult_title: "Twijfel je over je krultype of behandeling?",
@@ -182,16 +182,16 @@ const translations = {
     book_now_btn: "Réserver",
 
     // SEO Meta
-    meta_title: "Curlyila | Coiffeuse Spécialiste Cheveux Bouclés | Malines",
+    meta_title: "Curlyila | Coiffeuse Spécialiste Cheveux Bouclés | Genk",
 
     // Hero Section
-    hero_title: "Spécialiste Cheveux Bouclés & Texturés à Malines",
+    hero_title: "Spécialiste Cheveux Bouclés & Texturés à Genk",
     hero_subtitle: "Découvrez des coupes sur cheveux secs boucle par boucle, des soins ultra-hydratants et un rebond incomparable pour tous types de boucles (2A à 4C).",
     hero_cta_book: "Réserver votre séance",
     hero_cta_services: "Voir les prestations",
     badge_curl: "Spécialiste Cheveux Bouclés",
     badge_technique: "Coupe sur Cheveux Secs",
-    badge_location: "Situé à Malines",
+    badge_location: "Situé à Genk",
 
     // Hero & Intro Section
     hero_title_welcome: "WELCOME TO",
@@ -239,7 +239,7 @@ const translations = {
     founder_subtitle: "Votre Styliste • Ilaria",
     founder_title: "Ciao, Je suis Ilaria",
     founder_p1: "Originaire d'Italie, j'ai grandi passionnée par la beauté naturelle des chevelures texturées. Trop longtemps, les salons ont traité les boucles comme des cheveux lisses.",
-    founder_p2: "Dans mon studio à Malines, j'associe le savoir-faire italien à des techniques avancées de coupe à sec. Ma mission: vous faire aimer vos boucles au naturel.",
+    founder_p2: "Dans mon studio à Genk, j'associe le savoir-faire italien à des techniques avancées de coupe à sec. Ma mission: vous faire aimer vos boucles au naturel.",
 
     // Consultation Banner
     consult_title: "Un doute sur votre type de boucles ?",
@@ -281,7 +281,7 @@ const translations = {
     trust_p2_title: "Formules 100% Respectueuses",
     trust_p2_desc: "Sans sulfates agressifs, huiles minérales ni silicones lourds. Nous utilisons exclusivement des soins haut de gamme nourrissants.",
     trust_p3_title: "Qualité Certifiée & Expérience Privée",
-    trust_p3_desc: "Un accueil sur-mesure et une atmosphère luxueuse au cœur de Malines pour un moment de détente et un résultat éclatant.",
+    trust_p3_desc: "Un accueil sur-mesure et une atmosphère luxueuse au cœur de Genk pour un moment de détente et un résultat éclatant.",
 
     // Reviews Section
     reviews_title: "Avis Clients",
@@ -323,7 +323,7 @@ const translations = {
     cta_box_btn: "Vers la page de réservation",
 
     // Footer
-    footer_brand_desc: "Curlyila est un studio privé spécialisé dans la coupe et le soin des cheveux bouclés, frisés et crépus (2A à 4C) situé à Malines, Belgique.",
+    footer_brand_desc: "Curlyila est un studio privé spécialisé dans la coupe et le soin des cheveux bouclés, frisés et crépus (2A à 4C) situé à Genk, Belgique.",
     footer_links_title: "Navigation",
     footer_contact_title: "Contact & Adresse",
     footer_map_hint: "(Adresse exacte dans l'e-mail de confirmation)",
@@ -349,16 +349,16 @@ const translations = {
     book_now_btn: "Book Now",
 
     // SEO Meta
-    meta_title: "Curlyila | Hairstylist Specializing in Curly Hair | Mechelen",
+    meta_title: "Curlyila | Hairstylist Specializing in Curly Hair | Genk",
 
     // Hero Section
-    hero_title: "Curly Hair Specialist & Hairstylist in Mechelen",
+    hero_title: "Curly Hair Specialist & Hairstylist in Genk",
     hero_subtitle: "Experience precision dry curl cuts, deep steam hydration treatments, and ultimate bounce for all texture types (2A to 4C).",
     hero_cta_book: "Book your curl session",
     hero_cta_services: "View services",
     badge_curl: "Curly Hair Specialist & Stylist",
     badge_technique: "Dry Curl-by-Curl Cut",
-    badge_location: "Located in Mechelen",
+    badge_location: "Located in Genk",
 
     // Hero & Intro Section
     hero_title_welcome: "WELCOME TO",
@@ -406,7 +406,7 @@ const translations = {
     founder_subtitle: "Meet Your Stylist • Ilaria",
     founder_title: "Ciao, I'm Ilaria",
     founder_p1: "Born in Italy and passionate about the natural beauty of textured hair. For too long, traditional salons treated curls like straight hair.",
-    founder_p2: "In my Mechelen studio, I blend Italian artistry with advanced dry curl techniques and botanical moisture therapy. My mission: to empower you to love your natural crown.",
+    founder_p2: "In my Genk studio, I blend Italian artistry with advanced dry curl techniques and botanical moisture therapy. My mission: to empower you to love your natural crown.",
 
     // Consultation Banner
     consult_title: "Unsure about your curl pattern or treatment?",
@@ -448,7 +448,7 @@ const translations = {
     trust_p2_title: "100% Clean Curl Formulations",
     trust_p2_desc: "Zero harsh sulphates, drying alcohols, or heavy silicones. We utilize only nutrient-dense botanical moisture.",
     trust_p3_title: "Certified Quality & Private Luxury",
-    trust_p3_desc: "One-on-one attention in a calming, luxury salon setting in Mechelen for a restorative and transformative experience.",
+    trust_p3_desc: "One-on-one attention in a calming, luxury salon setting in Genk for a restorative and transformative experience.",
 
     // Reviews Section
     reviews_title: "Client Reviews",
@@ -490,7 +490,7 @@ const translations = {
     cta_box_btn: "Go to Booking Page",
 
     // Footer
-    footer_brand_desc: "Curlyila is a luxury curly hair studio located in Mechelen, Belgium. Specializing in dry curl-by-curl cutting, deep moisture therapy, and textured hair styling (2A to 4C).",
+    footer_brand_desc: "Curlyila is a luxury curly hair studio located in Genk, Belgium. Specializing in dry curl-by-curl cutting, deep moisture therapy, and textured hair styling (2A to 4C).",
     footer_links_title: "Navigation",
     footer_contact_title: "Contact & Location",
     footer_map_hint: "(Exact address in booking confirmation)",
@@ -942,9 +942,9 @@ const faqData = [
       en: "Where is the studio located?"
     },
     a: {
-      nl: "Curlyila is gevestigd in het centrum van Mechelen, België. Het exacte adres van de salon en parkeerinstructies worden automatisch met je gedeeld in je afspraakbevestiging via e-mail en sms.",
-      fr: "Le salon Curlyila est situé dans le centre de Malines (Mechelen), en Belgique. L'adresse exacte et les informations de parking vous sont envoyées dans votre e-mail de confirmation.",
-      en: "Curlyila is located in central Mechelen, Belgium. The exact address and parking details are automatically provided in your booking confirmation email and SMS."
+      nl: "Curlyila is gevestigd in het centrum van Genk, België. Het exacte adres van de salon en parkeerinstructies worden automatisch met je gedeeld in je afspraakbevestiging via e-mail en sms.",
+      fr: "Le salon Curlyila est situé dans le centre de Genk (Genk), en Belgique. L'adresse exacte et les informations de parking vous sont envoyées dans votre e-mail de confirmation.",
+      en: "Curlyila is located in central Genk, Belgium. The exact address and parking details are automatically provided in your booking confirmation email and SMS."
     }
   }
 ];
