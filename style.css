@@ -1988,39 +1988,110 @@ footer {
   left: 0;
   width: 100%;
   z-index: 999;
-  padding: 1rem 1.5rem;
-  background: rgba(12, 12, 14, 0.8);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border-top: 1px solid rgba(255,255,255,0.08);
-  justify-content: space-between;
+  padding: 0.8rem 1.2rem;
+  padding-bottom: max(0.8rem, env(safe-area-inset-bottom));
+  background: rgba(10, 10, 14, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-top: 1px solid rgba(242, 163, 171, 0.2);
+  gap: 0.8rem;
   align-items: center;
+  box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.7);
 }
 
-.sticky-mobile-info {
+.btn-mobile-wa {
+  flex: 1;
+  background: rgba(37, 211, 102, 0.15);
+  color: #25d366;
+  border: 1px solid rgba(37, 211, 102, 0.4);
+  padding: 0.75rem 1rem;
+  font-size: 0.82rem;
+  font-weight: 700;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 12px;
+  text-decoration: none;
 }
 
-.sticky-mobile-title {
+.btn-mobile-book {
+  flex: 1.4;
+  padding: 0.75rem 1.2rem;
+  font-size: 0.82rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 12px;
+}
+
+/* Viral Mobile Referral Card */
+.mobile-share-card {
+  margin: 3.5rem auto 1.5rem;
+  max-width: 800px;
+  padding: 2rem;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(37, 211, 102, 0.08) 0%, rgba(18, 18, 23, 0.8) 100%);
+  border: 1px solid rgba(37, 211, 102, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.mobile-share-icon {
+  width: 54px;
+  height: 54px;
+  background: rgba(37, 211, 102, 0.2);
+  color: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.mobile-share-text h4 {
   font-family: var(--font-serif);
-  font-size: 1.15rem;
-  font-style: italic;
-  color: var(--accent-silver);
+  font-size: 1.4rem;
+  margin-bottom: 0.3rem;
 }
 
-.sticky-mobile-subtitle {
-  font-size: 0.72rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+.mobile-share-text p {
+  font-size: 0.9rem;
   color: var(--accent-silver-dim);
 }
 
-.sticky-mobile-bar .btn {
-  padding: 0.8rem 1.5rem;
-  font-size: 0.78rem;
-  flex-grow: 0;
+.btn-whatsapp-share {
+  background: #25d366;
+  color: #08080a !important;
+  font-weight: 700;
+  padding: 0.85rem 1.4rem;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  white-space: nowrap;
+  box-shadow: 0 5px 20px rgba(37, 211, 102, 0.35);
+  text-decoration: none;
+  font-size: 0.85rem;
+  flex-shrink: 0;
 }
+
+@media (max-width: 768px) {
+  .mobile-share-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.8rem 1.4rem;
+  }
+  .btn-whatsapp-share {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
 
 /* ==========================================================================
    Responsive Queries (Mobile First Layout Adjustments)

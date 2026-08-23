@@ -704,7 +704,18 @@
       <div style="text-align: center;">
         <a href="https://curlyila.setmore.com/" target="_blank" class="btn btn-secondary" data-i18n="review_cta_btn">Laat een review achter</a>
       </div>
-    </section>
+
+    <!-- Viral Mobile Referral / Share with a Friend Card -->
+    <div class="mobile-share-card glass">
+      <div class="mobile-share-icon"><i class="fa-solid fa-gift"></i></div>
+      <div class="mobile-share-text">
+        <h4 data-i18n="share_title">Ken je iemand met krullen?</h4>
+        <p data-i18n="share_desc">Deel de salon met vrienden of familie in Genk, Hasselt of Maastricht en help ze aan hun droomkrullen!</p>
+      </div>
+      <a href="https://api.whatsapp.com/send?text=Hey!%20Check%20deze%20geweldige%20Italiaanse%20krullenspecialist%20in%20Genk:%20https://curlyila.vercel.app%20%E2%9C%A8" target="_blank" class="btn btn-whatsapp-share">
+        <i class="fa-brands fa-whatsapp"></i> <span data-i18n="share_btn">Deel via WhatsApp</span>
+      </a>
+    </div>
 
     <!-- Final CTA Section -->
     <section class="final-cta full-width-section" style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('assets/hero_bg.png') center/cover no-repeat;">
@@ -724,14 +735,17 @@
     <section>
       <h2 data-i18n="nav_services">Behandelingen &amp; Tarieven</h2>
       
-      <div class="services-tabs">
-        <button class="tab-btn active" data-category="cuts" data-i18n="cat_cuts">Krulsnitten</button>
-        <button class="tab-btn" data-category="treatments" data-i18n="cat_treatments">Verzorging &amp; Detox</button>
-        <button class="tab-btn" data-category="styling" data-i18n="cat_styling">Pakketten &amp; Makeovers</button>
+      <!-- Category Tabs (Filter Chips) -->
+      <div class="category-tabs">
+        <button class="category-tab active" data-category="all" data-i18n="filter_all">Alles</button>
+        <button class="category-tab" data-category="cuts" data-i18n="filter_cuts">Krulsnitten</button>
+        <button class="category-tab" data-category="treatments" data-i18n="filter_treatments">Verzorging &amp; Spa</button>
+        <button class="category-tab" data-category="styling" data-i18n="filter_styling">Definitie &amp; Styling</button>
       </div>
 
-      <div class="services-grid" id="services-cards-container">
-        <!-- Dynamically populated by app.js -->
+      <!-- Services Grid (Dynamically Populated) -->
+      <div class="services-grid" id="services-container">
+        <!-- Rendered by app.js -->
       </div>
     </section>
   </div>
@@ -741,61 +755,45 @@
   <!-- ========================================== -->
   <div id="page-gallery" class="page-section">
     <section>
-      <h2 data-i18n="nav_gallery">Resultaten &amp; Transformaties</h2>
+      <h2 data-i18n="nav_gallery">Onze Resultaten</h2>
       
-      <div class="gallery-filters">
-        <button class="filter-btn active" data-filter="all" data-i18n="filter_all">Alles</button>
-        <button class="filter-btn" data-filter="cuts" data-i18n="filter_cuts">Krulsnitten</button>
-        <button class="filter-btn" data-filter="treatments" data-i18n="filter_treatments">Hydratatie &amp; Spa</button>
-        <button class="filter-btn" data-filter="styling" data-i18n="filter_styling">Definitie &amp; Styling</button>
-        <button class="filter-btn" data-filter="coils" data-i18n="filter_coils">Afro &amp; Coils</button>
+      <!-- Gallery Filter Chips -->
+      <div class="gallery-tabs">
+        <button class="gallery-tab active" data-filter="all" data-i18n="filter_all">Alles</button>
+        <button class="gallery-tab" data-filter="cuts" data-i18n="filter_cuts">Krulsnitten</button>
+        <button class="gallery-tab" data-filter="treatments" data-i18n="filter_treatments">Hydratatie &amp; Spa</button>
+        <button class="gallery-tab" data-filter="styling" data-i18n="filter_styling">Definitie &amp; Styling</button>
+        <button class="gallery-tab" data-filter="coils" data-i18n="filter_coils">Afro &amp; Coils</button>
       </div>
 
+      <!-- Gallery Grid -->
       <div class="gallery-grid" id="gallery-container">
-        <!-- Dynamically populated by app.js -->
+        <!-- Dynamically rendered by app.js -->
       </div>
     </section>
   </div>
 
   <!-- ========================================== -->
-  <!-- PAGE 4: AFTERCARE / CURL ROUTINE PAGE SECTION -->
+  <!-- PAGE 4: AFTERCARE PAGE SECTION            -->
   <!-- ========================================== -->
   <div id="page-aftercare" class="page-section">
     <section>
-      <h2 data-i18n="nav_aftercare">De Ultieme Krulverzorging Thuis</h2>
+      <h2 data-i18n="nav_aftercare">Gids voor Krulverzorging</h2>
+      
       <div class="aftercare-container">
         
-        <div class="aftercare-grid">
-          <div class="aftercare-item">
-            <h3><i class="fa-solid fa-droplet"></i> <span data-i18n="care_1_title">Hydratatie is Koning</span></h3>
-            <p data-i18n="care_1_desc">Breng je leave-in conditioner en stylingproducten altijd aan op kletsnat haar. Vocht is de sleutel tot pluisvrije, elastische kruldefinitie.</p>
-          </div>
-          <div class="aftercare-item">
-            <h3><i class="fa-solid fa-moon"></i> <span data-i18n="care_2_title">Satijnen Bescherming 's Nachts</span></h3>
-            <p data-i18n="care_2_desc">Slaap op een 100% moerbeizijden kussensloop of draag een satijnen bonnet. Dit voorkomt schuring, knopen en vochtverlies tijdens het slapen.</p>
-          </div>
-          <div class="aftercare-item">
-            <h3><i class="fa-solid fa-shirt"></i> <span data-i18n="care_3_title">Microvezel Droogdeppen</span></h3>
-            <p data-i18n="care_3_desc">Gebruik nooit een ruwe badstof handdoek. Dep zachtjes droog met een microvezel handdoek of katoenen t-shirt om je krulpatroon te bewaren.</p>
-          </div>
-          <div class="aftercare-item">
-            <h3><i class="fa-solid fa-ban"></i> <span data-i18n="care_4_title">Vermijd Schadelijke Sulfaten</span></h3>
-            <p data-i18n="care_4_desc">Kies altijd voor milde, sulfaatvrije cleansers en vermijd zware niet-wateroplosbare siliconen die build-up veroorzaken op je krullen.</p>
-          </div>
-          <div class="aftercare-item">
-            <h3><i class="fa-solid fa-wind"></i> <span data-i18n="care_5_title">Diffuseren op Lage Hitte</span></h3>
-            <p data-i18n="care_5_desc">Gebruik een bowl-diffuser op lage snelheid en gematigde warmte. Raak de krullen pas aan wanneer ze 100% droog zijn voor maximale definitie.</p>
-          </div>
-          <div class="aftercare-item">
-            <h3><i class="fa-solid fa-scissors"></i> <span data-i18n="care_6_title">Regelmatige Onderhoudsknip</span></h3>
-            <p data-i18n="care_6_desc">Boek elke 3 tot 4 maanden een droge krul-refresh om gespleten punten te verwijderen en je model veerkrachtig en luchtig te houden.</p>
-          </div>
+        <!-- Aftercare Rules Grid -->
+        <div class="aftercare-grid" id="aftercare-rules-container">
+          <!-- Dynamically populated by app.js -->
         </div>
 
-        <!-- Studio Aftercare Essentials -->
-        <div class="essentials-section">
-          <h3 class="essentials-title" data-i18n="essentials_title">Onze Studio Krul Essentials</h3>
-          <p class="essentials-subtitle" data-i18n="essentials_subtitle">Houd je krullen salon-vers en pluisvrij met deze door Curlyila geselecteerde premium krulverzorgingsproducten.</p>
+        <!-- Studio Essentials Highlight -->
+        <div class="studio-essentials-section">
+          <div class="essentials-header">
+            <h3 data-i18n="essentials_title">Onze Studio Krul Essentials</h3>
+            <p data-i18n="essentials_subtitle">Houd je krullen salon-vers en pluisvrij met deze door Curlyila geselecteerde premium krulverzorgingsproducten.</p>
+          </div>
+          
           <div class="essentials-grid">
             <div class="essential-card glass">
               <div class="essential-badge">Curl Care</div>
@@ -926,13 +924,14 @@
     </div>
   </div>
 
-  <!-- Sticky Mobile booking button -->
+  <!-- Dual-Action Ergonomic Sticky Mobile Bar -->
   <div class="sticky-mobile-bar">
-    <div class="sticky-mobile-info">
-      <span class="sticky-mobile-title">Curlyila</span>
-      <span class="sticky-mobile-subtitle" data-i18n="badge_location">Genk, Belgium</span>
-    </div>
-    <a href="https://curlyila.setmore.com/" target="_blank" class="btn btn-primary" data-i18n="book_now_btn">Boek Nu</a>
+    <a href="https://wa.me/32000000000" target="_blank" class="btn btn-mobile-wa" title="WhatsApp Vraag">
+      <i class="fa-brands fa-whatsapp"></i> <span>WhatsApp</span>
+    </a>
+    <a href="https://curlyila.setmore.com/" target="_blank" class="btn btn-primary btn-mobile-book" data-i18n="book_now_btn">
+      <i class="fa-solid fa-calendar-check"></i> <span>Boek Nu</span>
+    </a>
   </div>
 
   <!-- WhatsApp / Instagram floating widget -->

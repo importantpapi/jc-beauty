@@ -179,6 +179,9 @@ const translations = {
     consult_title: "Twijfel je over je krultype of behandeling?",
     consult_desc: "Stuur een foto van je natuurlijke haar via WhatsApp of Instagram voor gratis persoonlijk advies van Curlyila.",
     consult_wa: "WhatsApp Advies",
+    share_title: "Ken je iemand met krullen?",
+    share_desc: "Deel de salon met vrienden of familie in Genk, Hasselt of Maastricht en help ze aan hun droomkrullen!",
+    share_btn: "Deel via WhatsApp",
 
     // Gallery Filters
     filter_all: "Alles",
@@ -279,8 +282,11 @@ const translations = {
 
     // Consultation Banner
     consult_title: "Un doute sur votre type de boucles ?",
-    consult_desc: "Envoyez une photo de vos cheveux au naturel via WhatsApp ou Instagram pour un conseil personnalisé gratuit de Curlyila.",
+    consult_desc: "Envoyez une photo de vos cheveux au naturel via WhatsApp ou Instagram pour un conseil personnalisé offert par Curlyila.",
     consult_wa: "Conseil WhatsApp",
+    share_title: "Connaissez-vous quelqu'un aux cheveux bouclés ?",
+    share_desc: "Partagez le salon avec vos proches à Genk, Hasselt ou Liège et offrez-leur des boucles de rêve !",
+    share_btn: "Partager sur WhatsApp",
 
     // Studio Essentials
     essentials_title: "Nos Essentiels Boucles en Studio",
@@ -464,8 +470,11 @@ const translations = {
 
     // Consultation Banner
     consult_title: "Unsure about your curl pattern or treatment?",
-    consult_desc: "Send a photo of your natural hair on WhatsApp or Instagram for free personal advice from Curlyila.",
+    consult_desc: "Send a photo of your natural hair on WhatsApp or Instagram for complimentary 1-on-1 curl advice from Curlyila.",
     consult_wa: "WhatsApp Advice",
+    share_title: "Know someone with curls?",
+    share_desc: "Share Curlyila with friends or family in Genk, Hasselt, or Maastricht and help them unlock their dream curls!",
+    share_btn: "Share on WhatsApp",
 
     // Studio Essentials
     essentials_title: "Our Studio Curl Essentials",
